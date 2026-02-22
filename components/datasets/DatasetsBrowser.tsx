@@ -48,7 +48,7 @@ function BrowserContent({ allDatasets }: DatasetsBrowserProps) {
 
   return (
     <>
-      <div className="flex items-center justify-between mb-4">
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between mb-4">
         <div>
           <h1 className="text-xl font-semibold text-gray-900">{heading}</h1>
           {toolSourceUrl && (
@@ -63,11 +63,11 @@ function BrowserContent({ allDatasets }: DatasetsBrowserProps) {
             </a>
           )}
         </div>
-        <div className="flex items-center gap-2">
-          <button className="flex items-center gap-1.5 px-3 py-1.5 text-sm border border-gray-300 rounded-lg hover:bg-gray-50 text-gray-700 transition-colors">
+        <div className="flex items-center gap-2 w-full sm:w-auto">
+          <button className="flex-1 sm:flex-none justify-center flex items-center gap-1.5 px-3 py-2 text-sm border border-gray-300 rounded-lg hover:bg-gray-50 text-gray-700 transition-colors">
             Export
           </button>
-          <button className="flex items-center gap-1.5 px-3 py-1.5 text-sm bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg font-medium transition-colors">
+          <button className="flex-1 sm:flex-none justify-center flex items-center gap-1.5 px-3 py-2 text-sm bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg font-medium transition-colors">
             + Add Dataset
           </button>
         </div>

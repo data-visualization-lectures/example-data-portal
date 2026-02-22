@@ -29,10 +29,11 @@ export function Sidebar({ tree }: SidebarProps) {
       return next;
     });
 
-  const isAllActive = pathname === "/datasets" && !activeTool;
+  const isAllActive =
+    (pathname === "/" || pathname === "/datasets") && !activeTool;
 
   return (
-    <aside className="w-64 shrink-0 bg-white border-r border-gray-200 flex flex-col overflow-y-auto">
+    <aside className="hidden md:flex w-64 shrink-0 bg-white border-r border-gray-200 flex-col overflow-y-auto">
       {/* Logo */}
       <div className="h-14 flex items-center px-4 border-b border-gray-200 shrink-0">
         <Link href="/" className="flex items-center gap-2">

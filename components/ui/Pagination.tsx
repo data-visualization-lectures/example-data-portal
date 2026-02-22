@@ -28,11 +28,11 @@ export function Pagination({
   }
 
   return (
-    <div className="flex items-center justify-between px-4 py-3 border-t border-gray-200">
+    <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between px-4 py-3 border-t border-gray-200">
       <p className="text-sm text-gray-500">
         {total === 0 ? "No results" : `Result ${start}–${end} of ${total}`}
       </p>
-      <div className="flex items-center gap-1">
+      <div className="flex items-center flex-wrap gap-1">
         <button
           disabled={page === 1}
           onClick={() => onPageChange(page - 1)}

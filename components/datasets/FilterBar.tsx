@@ -61,7 +61,7 @@ export function FilterBar() {
         ))}
       </div>
 
-      <div className="w-px h-5 bg-gray-200 mx-1" />
+      <div className="hidden sm:block w-px h-5 bg-gray-200 mx-1" />
 
       {/* Chart type filters */}
       <div className="flex flex-wrap items-center gap-1.5">

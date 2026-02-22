@@ -34,7 +34,7 @@ export default function RootLayout({
           `}
         </Script>
 
-        <div className="flex h-screen overflow-hidden">
+        <div className="flex min-h-screen overflow-hidden md:h-screen">
           <Suspense>
             <Sidebar tree={tree} />
           </Suspense>
@@ -43,7 +43,7 @@ export default function RootLayout({
             <Suspense>
               <Header />
             </Suspense>
-            <main className="flex-1 overflow-y-auto p-6">
+            <main className="flex-1 overflow-y-auto p-4 sm:p-6">
               {children}
             </main>
           </div>

@@ -37,7 +37,7 @@ export default async function DatasetDetailPage({ params }: Props) {
   const primaryFormat = Object.keys(dataset.downloadUrls)[0];
 
   return (
-    <div className="max-w-4xl">
+    <div className="max-w-4xl mx-auto">
       <Link
         href="/datasets"
         className="inline-flex items-center gap-1.5 text-sm text-gray-500 hover:text-gray-700 mb-5 transition-colors"
@@ -47,14 +47,14 @@ export default async function DatasetDetailPage({ params }: Props) {
       </Link>
 
       {/* Title row */}
-      <div className="flex items-start justify-between mb-6 gap-4">
+      <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-6 gap-4">
         <div>
           <h1 className="text-2xl font-bold text-gray-900">{dataset.name}</h1>
           <p className="text-gray-500 mt-1 text-sm leading-relaxed max-w-2xl">
             {dataset.description}
           </p>
         </div>
-        <div className="flex gap-2 shrink-0">
+        <div className="flex flex-wrap gap-2 shrink-0">
           {Object.entries(dataset.downloadUrls).map(([fmt, url]) => (
             <a
               key={fmt}
@@ -109,7 +109,7 @@ export default async function DatasetDetailPage({ params }: Props) {
       {/* Tags & metadata card */}
       <div className="bg-white rounded-lg border border-gray-200 p-5 mb-5 space-y-4">
         <div className="flex flex-wrap items-center gap-2">
-          <span className="text-xs font-semibold text-gray-500 w-24 shrink-0">
+          <span className="text-xs font-semibold text-gray-500 w-full sm:w-24 shrink-0">
             Formats
           </span>
           <div className="flex flex-wrap gap-1.5">
@@ -121,7 +121,7 @@ export default async function DatasetDetailPage({ params }: Props) {
           </div>
         </div>
         <div className="flex flex-wrap items-center gap-2">
-          <span className="text-xs font-semibold text-gray-500 w-24 shrink-0">
+          <span className="text-xs font-semibold text-gray-500 w-full sm:w-24 shrink-0">
             Chart Types
           </span>
           <div className="flex flex-wrap gap-1.5">
@@ -134,7 +134,7 @@ export default async function DatasetDetailPage({ params }: Props) {
         </div>
         {dataset.tags && dataset.tags.length > 0 && (
           <div className="flex flex-wrap items-center gap-2">
-            <span className="text-xs font-semibold text-gray-500 w-24 shrink-0">
+            <span className="text-xs font-semibold text-gray-500 w-full sm:w-24 shrink-0">
               Tags
             </span>
             <div className="flex flex-wrap gap-1.5">
@@ -148,7 +148,7 @@ export default async function DatasetDetailPage({ params }: Props) {
         )}
         {dataset.license && (
           <div className="flex items-center gap-2">
-            <span className="text-xs font-semibold text-gray-500 w-24 shrink-0">
+            <span className="text-xs font-semibold text-gray-500 w-full sm:w-24 shrink-0">
               License
             </span>
             <span className="text-sm text-gray-700">{dataset.license}</span>
@@ -156,7 +156,7 @@ export default async function DatasetDetailPage({ params }: Props) {
         )}
         {dataset.source && dataset.source !== "internal" && (
           <div className="flex items-start gap-2">
-            <span className="text-xs font-semibold text-gray-500 w-24 shrink-0 pt-0.5">
+            <span className="text-xs font-semibold text-gray-500 w-full sm:w-24 shrink-0 pt-0.5">
               データ出典
             </span>
             <a
@@ -193,13 +193,13 @@ export default async function DatasetDetailPage({ params }: Props) {
           {Object.entries(dataset.downloadUrls).map(([fmt, url]) => (
             <div
               key={fmt}
-              className="flex items-center justify-between p-3 bg-gray-50 rounded-lg"
+              className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 p-3 bg-gray-50 rounded-lg"
             >
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3 min-w-0">
                 <Badge className={FORMAT_COLORS[fmt as keyof typeof FORMAT_COLORS] ?? "bg-gray-100 text-gray-600"}>
                   {fmt.toUpperCase()}
                 </Badge>
-                <span className="text-sm text-gray-600 font-mono text-xs truncate max-w-sm">
+                <span className="text-sm text-gray-600 font-mono text-xs truncate max-w-full sm:max-w-sm">
                   {url.length > 60 ? `${url.substring(0, 60)}...` : url}
                 </span>
               </div>

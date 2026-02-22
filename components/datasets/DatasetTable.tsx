@@ -29,7 +29,81 @@ export function DatasetTable({
 }: DatasetTableProps) {
   return (
     <div className="bg-white rounded-lg border border-gray-200 overflow-hidden">
-      <div className="overflow-x-auto">
+      <div className="md:hidden divide-y divide-gray-100">
+        {items.length === 0 ? (
+          <div className="px-4 py-12 text-center text-sm text-gray-400">
+            No datasets match your filters.
+          </div>
+        ) : (
+          items.map((dataset) => (
+            <div key={dataset.id} className="p-4 space-y-3">
+              <div className="flex items-start justify-between gap-3">
+                <div className="min-w-0">
+                  <Link
+                    href={`/datasets/${dataset.id}`}
+                    className="font-semibold text-gray-900 hover:text-indigo-600 transition-colors text-sm"
+                  >
+                    {dataset.name}
+                  </Link>
+                  <p className="text-xs text-gray-400 mt-1">
+                    {dataset.description}
+                  </p>
+                </div>
+                <Badge className={TOOL_COLORS[dataset.tool]}>
+                  {TOOL_LABELS[dataset.tool]}
+                </Badge>
+              </div>
+
+              <div className="space-y-2">
+                <div className="flex items-center gap-2 flex-wrap">
+                  {dataset.formats.map((f) => (
+                    <Badge key={f} className={FORMAT_COLORS[f]}>
+                      {f.toUpperCase()}
+                    </Badge>
+                  ))}
+                </div>
+                <div className="flex items-center gap-2 flex-wrap">
+                  {dataset.chartTypes.slice(0, 3).map((ct) => (
+                    <Badge key={ct} className={CHART_TYPE_COLORS[ct]}>
+                      {ct}
+                    </Badge>
+                  ))}
+                  {dataset.chartTypes.length > 3 && (
+                    <Badge className="bg-gray-100 text-gray-500">
+                      +{dataset.chartTypes.length - 3}
+                    </Badge>
+                  )}
+                </div>
+              </div>
+
+              <div className="flex items-center gap-4 text-xs text-gray-500">
+                <span>Rows: {dataset.rows?.toLocaleString() ?? "—"}</span>
+                <span>Size: {dataset.sizeKb ? `${dataset.sizeKb} KB` : "—"}</span>
+              </div>
+
+              <div className="flex items-center gap-4">
+                <Link
+                  href={`/datasets/${dataset.id}`}
+                  className="text-xs text-indigo-600 hover:text-indigo-800 font-medium"
+                >
+                  View
+                </Link>
+                <a
+                  href={Object.values(dataset.downloadUrls)[0]}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1 text-xs text-gray-500 hover:text-gray-700 font-medium"
+                >
+                  <Download className="w-3 h-3" />
+                  DL
+                </a>
+              </div>
+            </div>
+          ))
+        )}
+      </div>
+
+      <div className="hidden md:block overflow-x-auto">
         <table className="min-w-full divide-y divide-gray-200">
           <thead className="bg-gray-50">
             <tr>
