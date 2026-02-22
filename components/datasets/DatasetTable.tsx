@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Download, ExternalLink } from "lucide-react";
 import type { Dataset } from "@/lib/types";
 import { Badge } from "@/components/ui/Badge";
+import { DownloadButton } from "@/components/ui/DownloadButton";
 import { Pagination } from "@/components/ui/Pagination";
 import {
   FORMAT_COLORS,
@@ -88,15 +89,14 @@ export function DatasetTable({
                 >
                   View
                 </Link>
-                <a
-                  href={Object.values(dataset.downloadUrls)[0]}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <DownloadButton
+                  url={Object.values(dataset.downloadUrls)[0]}
+                  fileName={`${dataset.id}.${Object.keys(dataset.downloadUrls)[0] ?? "dat"}`}
                   className="flex items-center gap-1 text-xs text-gray-500 hover:text-gray-700 font-medium"
                 >
                   <Download className="w-3 h-3" />
                   DL
-                </a>
+                </DownloadButton>
               </div>
             </div>
           ))
@@ -217,15 +217,14 @@ export function DatasetTable({
                       >
                         View
                       </Link>
-                      <a
-                        href={Object.values(dataset.downloadUrls)[0]}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                      <DownloadButton
+                        url={Object.values(dataset.downloadUrls)[0]}
+                        fileName={`${dataset.id}.${Object.keys(dataset.downloadUrls)[0] ?? "dat"}`}
                         className="flex items-center gap-1 text-xs text-gray-500 hover:text-gray-700 font-medium"
                       >
                         <Download className="w-3 h-3" />
                         DL
-                      </a>
+                      </DownloadButton>
                     </div>
                   </td>
                 </tr>

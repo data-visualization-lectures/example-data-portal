@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { allDatasets, getDatasetById } from "@/lib/datasets";
 import { Badge } from "@/components/ui/Badge";
+import { DownloadButton } from "@/components/ui/DownloadButton";
 import {
   FORMAT_COLORS,
   CHART_TYPE_COLORS,
@@ -33,9 +34,6 @@ export default async function DatasetDetailPage({ params }: Props) {
   const dataset = getDatasetById(id);
   if (!dataset) notFound();
 
-  const primaryDownloadUrl = Object.values(dataset.downloadUrls)[0];
-  const primaryFormat = Object.keys(dataset.downloadUrls)[0];
-
   return (
     <div className="max-w-4xl mx-auto">
       <Link
@@ -56,16 +54,15 @@ export default async function DatasetDetailPage({ params }: Props) {
         </div>
         <div className="flex flex-wrap gap-2 shrink-0">
           {Object.entries(dataset.downloadUrls).map(([fmt, url]) => (
-            <a
+            <DownloadButton
               key={fmt}
-              href={url}
-              target="_blank"
-              rel="noopener noreferrer"
+              url={url}
+              fileName={`${dataset.id}.${fmt}`}
               className="flex items-center gap-1.5 px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white text-sm rounded-lg font-medium transition-colors"
             >
               <Download className="w-4 h-4" />
               Download {fmt.toUpperCase()}
-            </a>
+            </DownloadButton>
           ))}
         </div>
       </div>
@@ -203,15 +200,14 @@ export default async function DatasetDetailPage({ params }: Props) {
                   {url.length > 60 ? `${url.substring(0, 60)}...` : url}
                 </span>
               </div>
-              <a
-                href={url}
-                target="_blank"
-                rel="noopener noreferrer"
+              <DownloadButton
+                url={url}
+                fileName={`${dataset.id}.${fmt}`}
                 className="flex items-center gap-1.5 px-3 py-1.5 text-sm text-indigo-600 border border-indigo-300 rounded-lg hover:bg-indigo-50 font-medium transition-colors"
               >
                 <Download className="w-3.5 h-3.5" />
                 Download
-              </a>
+              </DownloadButton>
             </div>
           ))}
         </div>
