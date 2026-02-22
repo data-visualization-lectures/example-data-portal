@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Example Data Portal
 
-## Getting Started
+データ可視化ツール向けのサンプルデータを横断的に閲覧・ダウンロードできるポータルです。  
+静的サイトとしてビルドし、GitHub Pages で配信します。
 
-First, run the development server:
+- Production URL: `https://example-data-portal.dataviz.jp/`
+- Framework: Next.js App Router (`output: "export"`)
+- Dataset count: 80
+
+## 主な機能
+
+- ツール別ナビゲーション（Sidebar）
+- フォーマット / チャートタイプのフィルタ
+- キーワード検索
+- ページネーション付き一覧表示
+- データセット詳細ページ（メタ情報・ダウンロードリンク）
+- モバイル閲覧向けレイアウト最適化
+- 管理表示モード（`admin=true` のときのみ管理ボタン表示）
+
+## 管理表示モード
+
+通常アクセスでは `Export` / `+ Add Dataset` は表示されません。  
+次のURLでのみ表示されます。
+
+- `/?admin=true`
+- `/datasets?admin=true`
+
+## 技術構成
+
+- Next.js 16
+- React 19
+- TypeScript
+- Tailwind CSS v4
+- Lucide React
+
+## 主要ディレクトリ
+
+- `app/`: ルーティングとページ
+- `components/`: UIコンポーネント群
+- `data/datasets.json`: データセット定義
+- `public/data/`: ローカル配信用のデータファイル
+- `lib/`: 型・定数・フィルタ/ソート等のロジック
+- `.github/workflows/deploy-pages.yml`: GitHub Pages デプロイ定義
+
+## ローカル開発
 
 ```bash
+npm ci
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- 開発URL: `http://localhost:3000`
+- 本番相当ビルド確認:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## GitHub Pages デプロイ
 
-## Learn More
+`main` への push で GitHub Actions が実行され、`out/` を Pages にデプロイします。
 
-To learn more about Next.js, take a look at the following resources:
+- Workflow: `.github/workflows/deploy-pages.yml`
+- Pages Source: `GitHub Actions`
+- Custom Domain: `example-data-portal.dataviz.jp`（`public/CNAME` 管理）
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 分析タグ
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Google tag（gtag.js）を `app/layout.tsx` で読み込んでいます。
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Measurement ID: `G-2BEWN8STG4`
