@@ -1,5 +1,10 @@
-import { redirect } from "next/navigation";
+import { allDatasets } from "@/lib/datasets";
+import { DatasetsBrowser } from "@/components/datasets/DatasetsBrowser";
 
 export default function Home() {
-  redirect("/datasets");
+  return (
+    <div>
+      <DatasetsBrowser allDatasets={allDatasets} />
+    </div>
+  );
 }
