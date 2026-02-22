@@ -15,7 +15,15 @@
 - ページネーション付き一覧表示
 - データセット詳細ページ（メタ情報・ダウンロードリンク）
 - モバイル閲覧向けレイアウト最適化
-- 管理機能ボタン（Export / Add Dataset）は現状UI非表示
+- 管理表示モード（`admin=true` のときのみ Export / Add Dataset を表示）
+
+## 管理表示モード
+
+`Export` / `+ Add Dataset` は通常URLでは表示されません。  
+`admin=true` が付いたURLでのみ表示されます。
+
+- 通常: `https://example-data-portal.dataviz.jp/`
+- 管理: `https://example-data-portal.dataviz.jp/?admin=true`
 
 ## 技術構成
 
