@@ -1338,5 +1338,174 @@
       "csv": "https://raw.githubusercontent.com/mwaskom/seaborn-data/master/taxis.csv"
     },
     "tags": ["transportation", "nyc", "geospatial"]
+  },
+  {
+    "id": "observable-aapl",
+    "name": "AAPL Stock Price",
+    "tool": "observable-plot",
+    "formats": ["csv"],
+    "chartTypes": ["line", "area"],
+    "description": "Appleの株価（AAPL）の日次終値・出来高データ。Yahoo Finance提供。",
+    "longDescription": "Yahoo Financeが提供するApple Inc.（AAPL）の株式データ。日付・始値・高値・安値・終値・出来高を収録した時系列データ。Observable Plotの折れ線グラフ・面グラフのチュートリアルで広く使われます。",
+    "license": "Observable Sample Data",
+    "source": "https://observablehq.com/@observablehq/sample-datasets",
+    "downloadUrls": {
+      "csv": "https://static.observableusercontent.com/files/3ccff97fd2d93da734e76829b2b066eafdaac6a1fafdec0faf6ebc443271cfc109d29e80dd217468fcb2aff1e6bffdc73f356cc48feb657f35378e6abbbb63b9"
+    },
+    "tags": ["finance", "stocks", "time-series"]
+  },
+  {
+    "id": "observable-alphabet",
+    "name": "Alphabet (Letter Frequency)",
+    "tool": "observable-plot",
+    "formats": ["csv"],
+    "chartTypes": ["bar"],
+    "description": "英語アルファベット26文字の出現頻度データ。暗号学・言語学の古典的データセット。",
+    "longDescription": "英語文章における各アルファベット（A〜Z）の出現頻度を収録した26行のシンプルなデータセット。暗号解読・圧縮アルゴリズムの教材として古くから使われており、棒グラフの基本的なチュートリアルに最適です。",
+    "rows": 26,
+    "columns": 2,
+    "sizeKb": 1,
+    "license": "Observable Sample Data",
+    "source": "https://observablehq.com/@observablehq/sample-datasets",
+    "downloadUrls": {
+      "csv": "https://static.observableusercontent.com/files/75d52e6c3130b1cae83cda89305e17b50f33e7420ef205587a135e8562bcfd22e483cf4fa2fb5df6dff66f9c5d19740be1cfaf47406286e2eb6574b49ffc685d"
+    },
+    "tags": ["linguistics", "text", "classic"]
+  },
+  {
+    "id": "observable-cars",
+    "name": "Cars (1983 ASA Exposition)",
+    "tool": "observable-plot",
+    "formats": ["csv"],
+    "chartTypes": ["scatter", "histogram", "bar"],
+    "description": "1983年ASAデータ展で使われた自動車スペックデータ。燃費・馬力・重量等を収録。",
+    "longDescription": "1983年のASA（米国統計学会）データ展で使用された自動車データ。名称・燃費（Miles per Gallon）・シリンダー数・排気量・馬力・重量・加速・製造年・産地（米/欧/日）を収録。散布図行列や多変量分析の定番教材データです。",
+    "license": "Observable Sample Data",
+    "source": "https://observablehq.com/@observablehq/sample-datasets",
+    "downloadUrls": {
+      "csv": "https://static.observableusercontent.com/files/048ec3dfd528110c0665dfa363dd28bc516ffb7247231f3ab25005036717f5c4c232a5efc7bb74bc03037155cb72b1abe85a33d86eb9f1a336196030443be4f6"
+    },
+    "tags": ["automotive", "classic", "multivariate"]
+  },
+  {
+    "id": "observable-citywages",
+    "name": "City Wages",
+    "tool": "observable-plot",
+    "formats": ["csv"],
+    "chartTypes": ["bar", "scatter"],
+    "description": "ニューヨーク・タイムズの分析に基づく米国都市部の職種別賃金データ。",
+    "longDescription": "New York Timesの報道分析をもとにした米国主要都市の職種別平均賃金データ。職業カテゴリ・都市・賃金・雇用者数を収録。都市間や職種間の賃金格差を棒グラフ・散布図で可視化する練習に適しています。",
+    "license": "Observable Sample Data",
+    "source": "https://observablehq.com/@observablehq/sample-datasets",
+    "downloadUrls": {
+      "csv": "https://static.observableusercontent.com/files/39837ec5121fcc163131dbc2fe8c1a2e0b3423a5d1e96b5ce371e2ac2e20a290d78b71a4fb08b9fa6a0107776e17fb78af313b8ea70f4cc6648fad68ddf06f7a"
+    },
+    "tags": ["economics", "wages", "usa"]
+  },
+  {
+    "id": "observable-diamonds",
+    "name": "Diamonds (ggplot2)",
+    "tool": "observable-plot",
+    "formats": ["csv"],
+    "chartTypes": ["scatter", "histogram", "bar"],
+    "description": "ダイヤモンドのカラット・カット・色・透明度・価格を収録したggplot2付属データセット。",
+    "longDescription": "RのggplotパッケージのDiamondsデータセットのCSV版。約54,000件のダイヤモンドのカラット・カット（Ideal/Premium等）・色（D〜J）・透明度（IF〜I1）・テーブル・深さ・サイズ3軸・価格（USD）を収録。Observable Plotでの多変量可視化の定番教材です。",
+    "rows": 53940,
+    "columns": 10,
+    "license": "Observable Sample Data",
+    "source": "https://observablehq.com/@observablehq/sample-datasets",
+    "downloadUrls": {
+      "csv": "https://static.observableusercontent.com/files/87942b1f5d061a21fa4bb8f2162db44e3ef0f7391301f867ab5ba718b225a63091af20675f0bfe7f922db097b217b377135203a7eab34651e21a8d09f4e37252"
+    },
+    "tags": ["regression", "multivariate", "price-prediction"]
+  },
+  {
+    "id": "observable-industries",
+    "name": "Industries (BLS Employment)",
+    "tool": "observable-plot",
+    "formats": ["csv"],
+    "chartTypes": ["area", "line", "bar"],
+    "description": "米国労働統計局（BLS）の産業別雇用者数の月次推移データ。",
+    "longDescription": "U.S. Bureau of Labor Statistics（BLS）が提供する米国の産業別非農業雇用者数の月次データ。農業・製造業・建設業・小売・金融・政府部門など複数の産業セクターの雇用動向を時系列で示します。面グラフ・折れ線グラフの多系列可視化に使われます。",
+    "license": "Observable Sample Data",
+    "source": "https://observablehq.com/@observablehq/sample-datasets",
+    "downloadUrls": {
+      "csv": "https://static.observableusercontent.com/files/76f13741128340cc88798c0a0b7fa5a2df8370f57554000774ab8ee9ae785ffa2903010cad670d4939af3e9c17e5e18e7e05ed2b38b848ac2fc1a0066aa0005f"
+    },
+    "tags": ["economics", "employment", "time-series"]
+  },
+  {
+    "id": "observable-penguins",
+    "name": "Penguins (Palmer)",
+    "tool": "observable-plot",
+    "formats": ["csv"],
+    "chartTypes": ["scatter", "histogram"],
+    "description": "パーマーペンギン3種の嘴・翼・体重・性別データ（Observable版）。",
+    "longDescription": "南極パーマー基地で計測されたアデリー・ジェンツー・ヒゲペンギン3種の生体計測データのObservable版。嘴の長さ・深さ・翼長・体重・性別・島名を収録。Observable Plotの散布図・ヒストグラムのチュートリアルで頻繁に使用されます。",
+    "license": "Observable Sample Data",
+    "source": "https://observablehq.com/@observablehq/sample-datasets",
+    "downloadUrls": {
+      "csv": "https://raw.githubusercontent.com/allisonhorst/palmerpenguins/master/inst/extdata/penguins.csv"
+    },
+    "tags": ["biology", "classification", "multivariate"]
+  },
+  {
+    "id": "observable-weather",
+    "name": "Weather (NOAA)",
+    "tool": "observable-plot",
+    "formats": ["csv"],
+    "chartTypes": ["line", "area", "scatter"],
+    "description": "NOAAの気象観測データ。最高・最低気温・降水量・積雪量・風速を収録。",
+    "longDescription": "米国海洋大気庁（NOAA）が提供する気象観測ステーションの日次データ。最高気温・最低気温・降水量・積雪量・風速などを収録。Observable Plotのドットプロット・ラインチャートなど多様な気象可視化のチュートリアルで使われます。",
+    "license": "Observable Sample Data",
+    "source": "https://observablehq.com/@observablehq/sample-datasets",
+    "downloadUrls": {
+      "csv": "https://static.observableusercontent.com/files/715db1223e067f00500780077febc6cebbdd90c151d3d78317c802732252052ab0e367039872ab9c77d6ef99e5f55a0724b35ddc898a1c99cb14c31a379af80a"
+    },
+    "tags": ["climate", "weather", "noaa"]
+  },
+  {
+    "id": "observable-flare",
+    "name": "Flare (Hierarchy)",
+    "tool": "observable-plot",
+    "formats": ["json"],
+    "chartTypes": ["treemap", "pie"],
+    "description": "Flare可視化ツールキットのパッケージ階層構造を表したJSONデータ。ツリー系チャートの定番教材。",
+    "longDescription": "Jeffrey Heerが開発したActionScript可視化ライブラリ「Flare」のパッケージ階層構造をJSONで表したデータ。ノードの名前とサイズ（ファイルサイズ）を含む階層構造データで、ツリーマップ・デンドログラム・サンバースト・サークルパッキングなどの階層可視化の定番教材として世界中で使われています。",
+    "license": "Observable Sample Data",
+    "source": "https://observablehq.com/@observablehq/sample-datasets",
+    "downloadUrls": {
+      "json": "https://vega.github.io/vega-datasets/data/flare.json"
+    },
+    "tags": ["hierarchy", "software", "treemap"]
+  },
+  {
+    "id": "observable-miserables",
+    "name": "Les Misérables (JSON Network)",
+    "tool": "observable-plot",
+    "formats": ["json"],
+    "chartTypes": ["map"],
+    "description": "レ・ミゼラブルの登場人物共起ネットワークのJSONデータ（D3.js nodes/links形式）。",
+    "longDescription": "ヴィクトル・ユゴーの小説『レ・ミゼラブル』の登場人物共起ネットワークをD3.jsのforce-directed graph形式（nodes/linksのJSON構造）で表したデータ。GephiのGEXF版と同じ人物関係を、JavaScriptライブラリ向けJSON形式で提供します。Observable Plotのネットワーク可視化チュートリアルで使われます。",
+    "rows": 77,
+    "license": "Public Domain",
+    "source": "https://observablehq.com/@observablehq/sample-datasets",
+    "downloadUrls": {
+      "json": "https://raw.githubusercontent.com/d3/d3-chord/main/test/data/miserables.json"
+    },
+    "tags": ["network", "literature", "d3"]
+  },
+  {
+    "id": "observable-pizza",
+    "name": "Pizza (Sales Locations)",
+    "tool": "observable-plot",
+    "formats": ["json"],
+    "chartTypes": ["map", "bar"],
+    "description": "架空のピザチェーン「Pizza Paradise」の店舗位置・売上データ。",
+    "longDescription": "Observable HQが提供するサンプルデータ。架空のピザチェーン「Pizza Paradise」の各店舗の位置情報（緯度経度）・売上・注文件数などを収録したJSONデータ。地図上への店舗プロットや売上分析のデモに使用されます。",
+    "license": "Observable Sample Data",
+    "source": "https://observablehq.com/@observablehq/sample-datasets",
+    "downloadUrls": {},
+    "tags": ["retail", "geospatial", "demo"]
   }
 ]
