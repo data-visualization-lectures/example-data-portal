@@ -17,6 +17,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const tree = buildTreeFromDatasets(allDatasets);
+  const toolGroups = tree.map((group) => ({
+    id: group.id,
+    label: group.label,
+    count: group.count ?? 0,
+  }));
 
   return (
     <html lang="en">
@@ -41,7 +46,7 @@ export default function RootLayout({
 
           <div className="flex flex-col flex-1 min-w-0 overflow-hidden">
             <Suspense>
-              <Header />
+              <Header toolGroups={toolGroups} />
             </Suspense>
             <main className="flex-1 overflow-y-auto p-4 sm:p-6">
               {children}
