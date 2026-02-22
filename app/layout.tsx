@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Suspense } from "react";
 import { Sidebar } from "@/components/layout/Sidebar";
 import { Header } from "@/components/layout/Header";
@@ -20,6 +21,19 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-gray-50 text-gray-900 antialiased">
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-2BEWN8STG4"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-2BEWN8STG4');
+          `}
+        </Script>
+
         <div className="flex h-screen overflow-hidden">
           <Suspense>
             <Sidebar tree={tree} />
