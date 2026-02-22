@@ -18,7 +18,6 @@ function BrowserContent({ allDatasets }: DatasetsBrowserProps) {
 
   const formatParam = params.getAll("format");
   const chartParam = params.getAll("chart");
-  const isAdmin = params.get("admin") === "true";
 
   const state: Partial<FilterState> = {
     query: params.get("query") ?? "",
@@ -49,7 +48,7 @@ function BrowserContent({ allDatasets }: DatasetsBrowserProps) {
 
   return (
     <>
-      <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between mb-4">
+      <div className="mb-4">
         <div>
           <h1 className="text-xl font-semibold text-gray-900">{heading}</h1>
           {toolSourceUrl && (
@@ -64,16 +63,6 @@ function BrowserContent({ allDatasets }: DatasetsBrowserProps) {
             </a>
           )}
         </div>
-        {isAdmin && (
-          <div className="flex items-center gap-2 w-full sm:w-auto">
-            <button className="flex-1 sm:flex-none justify-center flex items-center gap-1.5 px-3 py-2 text-sm border border-gray-300 rounded-lg hover:bg-gray-50 text-gray-700 transition-colors">
-              Export
-            </button>
-            <button className="flex-1 sm:flex-none justify-center flex items-center gap-1.5 px-3 py-2 text-sm bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg font-medium transition-colors">
-              + Add Dataset
-            </button>
-          </div>
-        )}
       </div>
 
       <FilterBar />
