@@ -1,0 +1,6 @@
+{
+  "labels": ["Chrome", "Safari", "Edge", "Firefox", "Samsung Internet", "Others"],
+  "data": [65.5, 18.8, 4.2, 3.2, 2.9, 5.4],
+  "unit": "percent",
+  "asOf": "2024-Q4"
+}

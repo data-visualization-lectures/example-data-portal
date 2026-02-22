@@ -1,0 +1,1342 @@
+[
+  {
+    "id": "vega-cars",
+    "name": "Cars",
+    "tool": "vega-lite",
+    "formats": ["json"],
+    "chartTypes": ["scatter", "bar", "histogram"],
+    "description": "馬力・燃費・重量・原産国などの属性を含む自動車データの定番データセット。",
+    "longDescription": "Vega-Liteのドキュメントで散布図・ヒストグラム・棒グラフのデモに広く使用されています。Miles_per_Gallon、Cylinders、Displacement、Horsepower、Weight_in_lbs、Acceleration、Year、Origin、Nameの9属性で406件のレコードを収録しています。",
+    "rows": 406,
+    "columns": 9,
+    "sizeKb": 38,
+    "license": "Public Domain",
+    "source": "https://vega.github.io/vega-datasets/",
+    "downloadUrls": {
+      "json": "https://vega.github.io/vega-datasets/data/cars.json"
+    },
+    "tags": ["automotive", "regression", "classic"]
+  },
+  {
+    "id": "vega-seattle-weather",
+    "name": "Seattle Weather",
+    "tool": "vega-lite",
+    "formats": ["csv"],
+    "chartTypes": ["bar", "heatmap", "line", "area"],
+    "description": "2012〜2015年のシアトルの日別気象観測データ。降水量・気温を収録。",
+    "longDescription": "シアトルの日別気象データを1,461件収録。降水量・最高気温・最低気温・風速・天気種別（霧雨・霧・雨・雪・晴れ）の6属性を持ちます。時系列グラフやカレンダーヒートマップのデモに多く利用されています。",
+    "rows": 1461,
+    "columns": 6,
+    "sizeKb": 48,
+    "license": "Public Domain",
+    "source": "https://vega.github.io/vega-datasets/",
+    "downloadUrls": {
+      "csv": "https://vega.github.io/vega-datasets/data/seattle-weather.csv"
+    },
+    "tags": ["weather", "time-series", "climate"]
+  },
+  {
+    "id": "vega-stocks",
+    "name": "Stocks",
+    "tool": "vega-lite",
+    "formats": ["csv"],
+    "chartTypes": ["line", "area"],
+    "description": "2000〜2010年の主要テック5社の日別株価終値データ。",
+    "longDescription": "AAPL・AMZN・GOOG・IBM・MSFTの日別終値を1,734件収録（2000年1月〜2010年12月）。複数系列の折れ線グラフやエリアチャートに最適です。",
+    "rows": 1734,
+    "columns": 3,
+    "sizeKb": 22,
+    "license": "Public Domain",
+    "source": "https://vega.github.io/vega-datasets/",
+    "downloadUrls": {
+      "csv": "https://vega.github.io/vega-datasets/data/stocks.csv"
+    },
+    "tags": ["finance", "time-series", "stocks"]
+  },
+  {
+    "id": "vega-movies",
+    "name": "Movies",
+    "tool": "vega-lite",
+    "formats": ["json"],
+    "chartTypes": ["scatter", "bar", "histogram"],
+    "description": "IMDb・ロッテントマトの評価、予算、全世界興行収入を含むハリウッド映画データ。",
+    "longDescription": "3,201本のハリウッド映画を収録。タイトル・国内興行収入・全世界興行収入・制作予算・公開日・MPAAレーティング・上映時間・IMDb評価・ロッテントマト評価・出典・ジャンル・クリエイティブタイプ・監督・配給会社の16属性を持ちます。",
+    "rows": 3201,
+    "columns": 16,
+    "sizeKb": 485,
+    "license": "Public Domain",
+    "source": "https://vega.github.io/vega-datasets/",
+    "downloadUrls": {
+      "json": "https://vega.github.io/vega-datasets/data/movies.json"
+    },
+    "tags": ["entertainment", "ratings", "finance"]
+  },
+  {
+    "id": "vega-iris",
+    "name": "Iris",
+    "tool": "vega-lite",
+    "formats": ["json"],
+    "chartTypes": ["scatter"],
+    "description": "3種のアヤメの花びら・がく片の寸法を収録したフィッシャーの定番データセット。",
+    "longDescription": "1936年に統計学者ロナルド・フィッシャーが紹介した有名なアヤメデータセット。Iris setosa・Iris virginica・Iris versicolorの3種から各50サンプル、計150件を収録。sepalLength・sepalWidth・petalLength・petalWidth・speciesの5属性を持ちます。",
+    "rows": 150,
+    "columns": 5,
+    "sizeKb": 8,
+    "license": "Public Domain",
+    "source": "https://vega.github.io/vega-datasets/",
+    "downloadUrls": {
+      "json": "https://vega.github.io/vega-datasets/data/iris.json"
+    },
+    "tags": ["biology", "classification", "classic", "machine-learning"]
+  },
+  {
+    "id": "d3-us-states",
+    "name": "US States",
+    "tool": "d3js",
+    "formats": ["geojson"],
+    "chartTypes": ["map"],
+    "description": "米国50州の境界ポリゴンを収録したGeoJSON。D3コロプレスマップに多用。",
+    "longDescription": "米国50州の境界ポリゴンをGeoJSON形式で提供。各フィーチャーに州名とジオメトリが含まれます。統計データと組み合わせ、D3でコロプレスマップ・カルトグラムなどの地理可視化を作成する際によく使用されます。",
+    "sizeKb": 92,
+    "license": "Public Domain",
+    "source": "https://github.com/PublicaMundi/MappingAPI",
+    "downloadUrls": {
+      "geojson": "https://raw.githubusercontent.com/PublicaMundi/MappingAPI/master/data/geojson/us-states.json"
+    },
+    "tags": ["geography", "usa", "boundaries"]
+  },
+  {
+    "id": "d3-world-110m",
+    "name": "World 110m",
+    "tool": "d3js",
+    "formats": ["json"],
+    "chartTypes": ["map"],
+    "description": "1:110mスケールの簡略化された世界地形データ。D3の地球儀・投影デモに最適。",
+    "longDescription": "Natural Earthの1:110mスケールデータを基にしています。国境ポリゴンをTopoJSON形式で収録しており、D3の各種投影法でのレンダリング時にGeoJSONへ変換して利用します。ファイルサイズが小さいため、世界地図のクイックデモに最適です。",
+    "sizeKb": 100,
+    "license": "Public Domain",
+    "source": "https://github.com/topojson/world-atlas",
+    "downloadUrls": {
+      "json": "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json"
+    },
+    "tags": ["geography", "world", "topojson"]
+  },
+  {
+    "id": "seaborn-titanic",
+    "name": "Titanic",
+    "tool": "seaborn",
+    "formats": ["csv"],
+    "chartTypes": ["bar", "histogram", "scatter"],
+    "description": "タイタニック号の乗客生存データ。人口統計属性とチケット情報を収録。",
+    "longDescription": "1912年のタイタニック号災害における乗客記録を891件収録。生存有無・客室クラス・氏名・性別・年齢・同乗兄弟配偶者数・同乗親子数・チケット番号・運賃・客室・乗船港の15属性を持ちます。二値分類・生存分析の定番データセットです。",
+    "rows": 891,
+    "columns": 15,
+    "sizeKb": 60,
+    "license": "Public Domain",
+    "source": "https://github.com/mwaskom/seaborn-data",
+    "downloadUrls": {
+      "csv": "https://raw.githubusercontent.com/mwaskom/seaborn-data/master/titanic.csv"
+    },
+    "tags": ["history", "classification", "survival", "classic"]
+  },
+  {
+    "id": "seaborn-penguins",
+    "name": "Penguins",
+    "tool": "seaborn",
+    "formats": ["csv"],
+    "chartTypes": ["scatter", "histogram", "bar"],
+    "description": "南極パーマー基地で採取した3種のペンギンの体計測データ。",
+    "longDescription": "クリスティン・ゴーマン博士が南極パーマー基地で収集したデータ。アデリー・ヒゲ・ジェンツーの3種344件を収録し、種・島・くちばし長さ・くちばし深さ・フリッパー長さ・体重・性別の7属性を持ちます。Irisデータセットの現代的な代替として分類タスクに広く利用されています。",
+    "rows": 344,
+    "columns": 7,
+    "sizeKb": 13,
+    "license": "CC0",
+    "source": "https://github.com/mwaskom/seaborn-data",
+    "downloadUrls": {
+      "csv": "https://raw.githubusercontent.com/mwaskom/seaborn-data/master/penguins.csv"
+    },
+    "tags": ["biology", "classification", "ecology"]
+  },
+  {
+    "id": "seaborn-tips",
+    "name": "Tips",
+    "tool": "seaborn",
+    "formats": ["csv"],
+    "chartTypes": ["scatter", "bar", "pie"],
+    "description": "レストランのチップデータ。合計金額・チップ額・性別・喫煙有無・曜日・人数を収録。",
+    "longDescription": "あるウェイターの勤務期間中に記録したレストランチップデータを244件収録。total_bill・tip・sex・smoker・day・time・sizeの7属性を持ちます。回帰分析やカテゴリ別比較のデモによく使用されます。",
+    "rows": 244,
+    "columns": 7,
+    "sizeKb": 8,
+    "license": "Public Domain",
+    "source": "https://github.com/mwaskom/seaborn-data",
+    "downloadUrls": {
+      "csv": "https://raw.githubusercontent.com/mwaskom/seaborn-data/master/tips.csv"
+    },
+    "tags": ["restaurant", "regression", "social"]
+  },
+  {
+    "id": "chartjs-monthly-sales",
+    "name": "Monthly Sales",
+    "tool": "chartjs",
+    "formats": ["json"],
+    "chartTypes": ["bar", "line"],
+    "description": "4つの商品カテゴリの月別売上を収録した合成データ（1年分）。",
+    "longDescription": "家電・衣類・食品・スポーツの4カテゴリにおける12ヶ月分の月別売上を収録した合成データセット。Chart.jsでの複数データセット棒グラフやグループ折れ線グラフのデモ用に設計されています。",
+    "rows": 12,
+    "columns": 5,
+    "sizeKb": 2,
+    "license": "Public Domain",
+    "source": "internal",
+    "downloadUrls": {
+      "json": "/data/chartjs-monthly-sales.json"
+    },
+    "tags": ["sales", "synthetic", "finance"]
+  },
+  {
+    "id": "chartjs-browser-stats",
+    "name": "Browser Market Share",
+    "tool": "chartjs",
+    "formats": ["json"],
+    "chartTypes": ["pie", "bar"],
+    "description": "世界のブラウザ市場シェア（割合）。円グラフ・ドーナツグラフに最適。",
+    "longDescription": "Chrome・Safari・Edge・Firefox・Samsung Internet・その他のブラウザ市場シェア（%）を収録した合成データセット。Chart.jsの円グラフおよびドーナツグラフのデモ用に設計されています。",
+    "rows": 6,
+    "columns": 2,
+    "sizeKb": 1,
+    "license": "Public Domain",
+    "source": "internal",
+    "downloadUrls": {
+      "json": "/data/chartjs-browser-stats.json"
+    },
+    "tags": ["technology", "synthetic", "market-share"]
+  },
+  {
+    "id": "observable-athletes",
+    "name": "Olympic Athletes",
+    "tool": "observable-plot",
+    "formats": ["csv"],
+    "chartTypes": ["scatter", "histogram", "bar"],
+    "description": "オリンピック選手の体格・競技種目・国籍データ。",
+    "longDescription": "約2,000件のオリンピック選手データを収録。氏名・国籍・性別・生年月日・身長・体重・競技種目・金メダル数・銀メダル数・銅メダル数の11属性を持ちます。多次元散布図や比較棒グラフの作成に適しています。",
+    "rows": 2000,
+    "columns": 11,
+    "sizeKb": 84,
+    "license": "Public Domain",
+    "source": "https://observablehq.com/@observablehq/sample-datasets",
+    "downloadUrls": {
+      "csv": "https://static.observableusercontent.com/files/31ca24545a0603dce099d10add5428e88f654959b3b2eca61a7b938c7b89a56c179e5e6fa955c45bcd7ced335f9c1f2894eb62b985a1d5741a9dcbe55a3c5e0b5"
+    },
+    "tags": ["sports", "olympics", "demographics"]
+  },
+  {
+    "id": "observable-gistemp",
+    "name": "GISTEMP Global Temperature",
+    "tool": "observable-plot",
+    "formats": ["csv"],
+    "chartTypes": ["line", "area", "heatmap"],
+    "description": "NASA GISSによる1880年以降の地球表面温度偏差分析データ。",
+    "longDescription": "NASAのGISS表面温度解析（GISTEMP）は、1880年以降の地球表面温度の変化を測定したデータです。1951〜1980年平均を基準とした年別・月別の全球気温偏差を収録しており、気候変動の可視化に欠かせないデータセットです。",
+    "rows": 1700,
+    "columns": 3,
+    "sizeKb": 30,
+    "license": "Public Domain",
+    "source": "https://data.giss.nasa.gov/gistemp/",
+    "downloadUrls": {
+      "csv": "https://static.observableusercontent.com/files/gistemp.csv"
+    },
+    "tags": ["climate", "time-series", "science", "nasa"]
+  },
+  {
+    "id": "pandas-pokemon",
+    "name": "Pokémon Stats",
+    "tool": "pandas",
+    "formats": ["csv"],
+    "chartTypes": ["bar", "scatter", "histogram"],
+    "description": "全800匹のポケモンの基本ステータス（HP・攻撃・防御・素早さ・タイプ）を収録。",
+    "longDescription": "全世代800匹のポケモンの基本ステータスを収録。番号・名前・タイプ1・タイプ2・合計・HP・攻撃・防御・特攻・特防・素早さ・世代・伝説フラグの13属性を持ちます。pandasのデータ操作・groupby演算・基礎的な機械学習の学習用として人気のデータセットです。",
+    "rows": 800,
+    "columns": 13,
+    "sizeKb": 55,
+    "license": "Public Domain",
+    "source": "https://raw.githubusercontent.com/KeithGalli/pandas/master/pokemon_data.csv",
+    "downloadUrls": {
+      "csv": "https://raw.githubusercontent.com/KeithGalli/pandas/master/pokemon_data.csv"
+    },
+    "tags": ["gaming", "classification", "statistics"]
+  },
+  {
+    "id": "seaborn-iris",
+    "name": "Iris",
+    "tool": "seaborn",
+    "formats": ["csv"],
+    "chartTypes": ["scatter", "histogram", "bar"],
+    "description": "3種のアヤメの花びら・がく片の寸法を収録した定番分類データセット。",
+    "longDescription": "フィッシャーのアヤメデータセットのSeaborn版。seaborn.load_dataset('iris') で読み込み可能。setosa・versicolor・virginicaの3種各50件、計150件を収録。sepalLength・sepalWidth・petalLength・petalWidth・speciesの5属性を持ちます。",
+    "rows": 150,
+    "columns": 5,
+    "sizeKb": 4,
+    "license": "Public Domain",
+    "source": "https://github.com/mwaskom/seaborn-data/blob/master/iris.csv",
+    "downloadUrls": {
+      "csv": "https://raw.githubusercontent.com/mwaskom/seaborn-data/master/iris.csv"
+    },
+    "tags": ["biology", "classification", "classic", "machine-learning"]
+  },
+  {
+    "id": "seaborn-flights",
+    "name": "Flights",
+    "tool": "seaborn",
+    "formats": ["csv"],
+    "chartTypes": ["heatmap", "line", "bar"],
+    "description": "1949〜1960年の月別国際航空旅客数。ヒートマップや時系列分析に最適。",
+    "longDescription": "1949年から1960年にかけての月別国際航空旅客数を144件収録。year・month・passengersの3属性を持ちます。seaborn.load_dataset('flights') で読み込み可能。月別×年別のピボットにしてヒートマップに使う例が特に有名です。",
+    "rows": 144,
+    "columns": 3,
+    "sizeKb": 3,
+    "license": "Public Domain",
+    "source": "https://github.com/mwaskom/seaborn-data/blob/master/flights.csv",
+    "downloadUrls": {
+      "csv": "https://raw.githubusercontent.com/mwaskom/seaborn-data/master/flights.csv"
+    },
+    "tags": ["aviation", "time-series", "classic"]
+  },
+  {
+    "id": "sklearn-iris",
+    "name": "Iris",
+    "tool": "sklearn",
+    "formats": ["csv"],
+    "chartTypes": ["scatter", "histogram", "bar"],
+    "description": "Scikit-learnの定番分類データセット。sklearn.datasets.load_iris() で読み込み可能。",
+    "longDescription": "Scikit-learnに組み込まれたアヤメ分類データセット。sklearn.datasets.load_iris() でNumPy配列またはDataFrameとして読み込めます。setosa・versicolor・virginicaの3クラス分類問題として機械学習の入門に広く利用されています。",
+    "rows": 150,
+    "columns": 5,
+    "sizeKb": 4,
+    "license": "Public Domain",
+    "source": "https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_iris.html",
+    "downloadUrls": {
+      "csv": "https://raw.githubusercontent.com/mwaskom/seaborn-data/master/iris.csv"
+    },
+    "tags": ["biology", "classification", "classic", "machine-learning"]
+  },
+  {
+    "id": "sklearn-diabetes",
+    "name": "Diabetes",
+    "tool": "sklearn",
+    "formats": ["tsv"],
+    "chartTypes": ["scatter", "line", "histogram"],
+    "description": "糖尿病患者442名の10の生体指標と1年後の病勢進展指標を収録。",
+    "longDescription": "Efron et al. (2004)による糖尿病データセット。442名の患者について年齢・性別・BMI・血圧・血清測定値6項目の10属性と、治療1年後の病勢進展指標（数値目標変数）を収録。sklearn.datasets.load_diabetes() で読み込み可能。回帰問題の基準データとして広く使用されています。",
+    "rows": 442,
+    "columns": 11,
+    "sizeKb": 24,
+    "license": "Public Domain",
+    "source": "https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_diabetes.html",
+    "downloadUrls": {
+      "tsv": "https://www4.stat.ncsu.edu/~boos/var.select/diabetes.tab.txt"
+    },
+    "tags": ["medical", "regression", "machine-learning"]
+  },
+  {
+    "id": "sklearn-digits",
+    "name": "Digits",
+    "tool": "sklearn",
+    "formats": ["csv"],
+    "chartTypes": ["heatmap", "scatter", "histogram"],
+    "description": "0〜9の手書き数字画像（8×8ピクセル）を数値化した認識データセット。",
+    "longDescription": "UCI光学式手書き数字認識データセットのSubset。8×8ピクセルの手書き数字画像を64次元の特徴ベクトルとして表現し、1,797サンプルを収録。sklearn.datasets.load_digits() で読み込み可能。多クラス分類・次元削減の演習によく使われます。",
+    "rows": 1797,
+    "columns": 65,
+    "sizeKb": 420,
+    "license": "Public Domain",
+    "source": "https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_digits.html",
+    "downloadUrls": {
+      "csv": "https://archive.ics.uci.edu/ml/machine-learning-databases/optdigits/optdigits.tra"
+    },
+    "tags": ["image", "classification", "machine-learning", "digits"]
+  },
+  {
+    "id": "sklearn-wine",
+    "name": "Wine",
+    "tool": "sklearn",
+    "formats": ["csv"],
+    "chartTypes": ["scatter", "bar", "histogram"],
+    "description": "イタリア産ワイン178本の化学分析値から3品種を分類するデータセット。",
+    "longDescription": "イタリアの同一地域産3品種のワイン178本について、アルコール・リンゴ酸・灰分・アルカリ度・マグネシウム・フェノール類など13の化学成分を収録。sklearn.datasets.load_wine() で読み込み可能。多クラス分類の演習に広く使われています。",
+    "rows": 178,
+    "columns": 14,
+    "sizeKb": 11,
+    "license": "Public Domain",
+    "source": "https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_wine.html",
+    "downloadUrls": {
+      "csv": "https://archive.ics.uci.edu/ml/machine-learning-databases/wine/wine.data"
+    },
+    "tags": ["food", "classification", "machine-learning", "chemistry"]
+  },
+  {
+    "id": "r-iris",
+    "name": "Iris",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["scatter", "histogram", "bar"],
+    "description": "Rに内蔵されたアヤメ分類データセット。iris でアクセス可能。",
+    "longDescription": "R組み込みデータセット。iris と入力するだけで使用可能。フィッシャーのアヤメデータを基にしており、setosa・versicolor・virginicaの3種150件を収録。Sepal.Length・Sepal.Width・Petal.Length・Petal.Width・Speciesの5変数を持ちます。",
+    "rows": 150,
+    "columns": 5,
+    "sizeKb": 4,
+    "license": "Public Domain",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/iris.html",
+    "downloadUrls": {
+      "csv": "https://raw.githubusercontent.com/vincentarelbundock/Rdatasets/master/csv/datasets/iris.csv"
+    },
+    "tags": ["biology", "classification", "classic", "machine-learning"]
+  },
+  {
+    "id": "r-mtcars",
+    "name": "mtcars",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["scatter", "bar", "histogram"],
+    "description": "1974年版Motor Trendの自動車32車種の燃費・性能データ。",
+    "longDescription": "1974年のMotor Trend誌に掲載された32車種の自動車データ。mpg（燃費）・cyl（気筒数）・disp（排気量）・hp（馬力）・drat・wt（重量）・qsec・vs・am（トランスミッション）・gear・carbの11変数を収録。Rの散布図行列やモデル比較の入門例として定番のデータセットです。",
+    "rows": 32,
+    "columns": 11,
+    "sizeKb": 2,
+    "license": "Public Domain",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/mtcars.html",
+    "downloadUrls": {
+      "csv": "https://raw.githubusercontent.com/vincentarelbundock/Rdatasets/master/csv/datasets/mtcars.csv"
+    },
+    "tags": ["automotive", "regression", "classic"]
+  },
+  {
+    "id": "r-airpassengers",
+    "name": "AirPassengers",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["line", "area"],
+    "description": "1949〜1960年の月別国際航空旅客数の時系列データ（Boxとラジェンキンスの古典）。",
+    "longDescription": "BoxとJenkinsの古典的時系列教科書で使用された月別国際航空旅客数データ。1949年1月から1960年12月まで144ヶ月分を収録。季節性・トレンドを持つ時系列分析（ARIMA等）の入門例として世界中で使用されています。",
+    "rows": 144,
+    "columns": 2,
+    "sizeKb": 2,
+    "license": "Public Domain",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/AirPassengers.html",
+    "downloadUrls": {
+      "csv": "https://raw.githubusercontent.com/vincentarelbundock/Rdatasets/master/csv/datasets/AirPassengers.csv"
+    },
+    "tags": ["aviation", "time-series", "classic"]
+  },
+  {
+    "id": "r-titanic",
+    "name": "Titanic",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["bar", "heatmap"],
+    "description": "タイタニック号乗客の生存有無を性別・年齢・客室クラスで集計した4次元テーブル。",
+    "longDescription": "Rに内蔵されたTitanicデータセット（個人レコードではなく集計表形式）。性別・年齢層（大人/子供）・客室クラス（1・2・3・乗員）・生存有無の4変数で集計された32行の集計テーブルです。個人レコード版のタイタニックデータとは異なりますのでご注意ください。",
+    "rows": 32,
+    "columns": 5,
+    "sizeKb": 1,
+    "license": "Public Domain",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/Titanic.html",
+    "downloadUrls": {
+      "csv": "https://raw.githubusercontent.com/vincentarelbundock/Rdatasets/master/csv/datasets/Titanic.csv"
+    },
+    "tags": ["history", "classification", "survival", "aggregate"]
+  },
+  {
+    "id": "tableau-superstore",
+    "name": "Superstore Sales",
+    "tool": "tableau",
+    "formats": ["xls"],
+    "chartTypes": ["bar", "line", "scatter", "map"],
+    "description": "Tableauのサンプル小売販売データ。地域・カテゴリ別の売上・利益を収録。",
+    "longDescription": "Tableauのチュートリアルで最もよく使われるサンプルデータセット。米国の架空の小売チェーン「Sample Superstore」の受注データで、受注日・発送日・顧客情報・製品カテゴリ・売上・利益・割引率・数量などを収録。地図表示・時系列・ランキング分析など多様なVizの作成に対応しています。",
+    "license": "Tableau Sample Data",
+    "source": "https://public.tableau.com/app/sample-data/sample_-_superstore.xls",
+    "downloadUrls": {
+      "xls": "https://public.tableau.com/app/sample-data/sample_-_superstore.xls"
+    },
+    "tags": ["retail", "sales", "finance", "tableau-sample"]
+  },
+  {
+    "id": "tableau-worldcup",
+    "name": "World Cup Results",
+    "tool": "tableau",
+    "formats": ["xlsx"],
+    "chartTypes": ["bar", "map"],
+    "description": "FIFAワールドカップの歴代試合結果データ。",
+    "longDescription": "歴代FIFAワールドカップの試合結果を収録したTableauサンプルデータ。開催年・開催国・対戦国・スコア・勝敗などの情報が含まれます。地図や棒グラフで国別の成績を可視化するデモによく使われます。",
+    "license": "Tableau Sample Data",
+    "source": "https://public.tableau.com/app/sample-data/world_cup_results.xlsx",
+    "downloadUrls": {
+      "xlsx": "https://public.tableau.com/app/sample-data/world_cup_results.xlsx"
+    },
+    "tags": ["sports", "soccer", "tableau-sample"]
+  },
+  {
+    "id": "tableau-hollywood",
+    "name": "Hollywood's Most Profitable Stories",
+    "tool": "tableau",
+    "formats": ["csv"],
+    "chartTypes": ["bar", "scatter", "histogram"],
+    "description": "ハリウッド映画の収益性データ。ジャンル・スタジオ・世界興行収入を収録。",
+    "longDescription": "2007〜2012年のハリウッド映画を対象に、制作費・世界興行収入・国内興行収入・ロッテントマトスコア・オーディエンススコア・ジャンル・配給スタジオを収録したTableauサンプルデータ。収益性・ジャンル分析・評価比較のViz作成に適しています。",
+    "license": "Tableau Sample Data",
+    "source": "https://public.tableau.com/app/sample-data/HollywoodsMostProfitableStories.csv",
+    "downloadUrls": {
+      "csv": "https://public.tableau.com/app/sample-data/HollywoodsMostProfitableStories.csv"
+    },
+    "tags": ["entertainment", "finance", "ratings", "tableau-sample"]
+  },
+  {
+    "id": "tableau-titanic",
+    "name": "Titanic Passenger List",
+    "tool": "tableau",
+    "formats": ["csv"],
+    "chartTypes": ["bar", "histogram", "scatter"],
+    "description": "タイタニック号の乗客リスト。Tableau学習用にフォーマットされた個人レコード版。",
+    "longDescription": "Tableau公式が提供するタイタニック号乗客リストのサンプルデータ。乗客ごとの生存有無・客室クラス・氏名・性別・年齢・チケット情報・運賃・乗船港などを収録しています。他のタイタニックデータと比較してTableau向けに整形されています。",
+    "license": "Tableau Sample Data",
+    "source": "https://public.tableau.com/app/sample-data/titanic%20passenger%20list.csv",
+    "downloadUrls": {
+      "csv": "https://public.tableau.com/app/sample-data/titanic%20passenger%20list.csv"
+    },
+    "tags": ["history", "classification", "survival", "tableau-sample"]
+  },
+  {
+    "id": "powerbi-retail",
+    "name": "Retail Analysis Sample",
+    "tool": "power-bi",
+    "formats": ["pbix"],
+    "chartTypes": ["bar", "line", "map"],
+    "description": "小売チェーンの店舗・地区別売上分析サンプル。Power BIレポート付き。",
+    "longDescription": "複数店舗・地区を持つ小売チェーンの売上・在庫・マージンを分析するPower BIサンプルレポート。今年度と前年度の売上比較・店舗別パフォーマンス・地区別地図表示など、小売業の代表的なKPI分析をカバーします。Power BI Desktopで開き、レポートとデータを確認できます。",
+    "license": "Microsoft Sample Data",
+    "source": "https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix",
+    "downloadUrls": {
+      "pbix": "https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix"
+    },
+    "tags": ["retail", "sales", "powerbi-sample"]
+  },
+  {
+    "id": "powerbi-sales-marketing",
+    "name": "Sales and Marketing Sample",
+    "tool": "power-bi",
+    "formats": ["pbix"],
+    "chartTypes": ["bar", "line", "scatter"],
+    "description": "製造企業の販売・マーケティング指標を分析するPower BIサンプル。",
+    "longDescription": "架空の製造企業VanArsdel社の販売とマーケティングデータを収録したPower BIサンプルレポート。市場シェア・売上トレンド・地域別パフォーマンス・製品別収益などを分析できます。競合他社との比較分析も含まれています。",
+    "license": "Microsoft Sample Data",
+    "source": "https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix",
+    "downloadUrls": {
+      "pbix": "https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix"
+    },
+    "tags": ["sales", "marketing", "powerbi-sample"]
+  },
+  {
+    "id": "powerbi-hr",
+    "name": "Human Resources Sample",
+    "tool": "power-bi",
+    "formats": ["pbix"],
+    "chartTypes": ["bar", "pie", "scatter"],
+    "description": "人事データ（採用・離職・在籍者）を分析するPower BIサンプルレポート。",
+    "longDescription": "企業の人事データを分析するPower BIサンプルレポート。新規採用数・離職率・在籍者数・部門別・職種別・年齢層別の人員構成を可視化します。採用トレンドや離職要因の分析に使えるKPIを多数収録しています。",
+    "license": "Microsoft Sample Data",
+    "source": "https://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix",
+    "downloadUrls": {
+      "pbix": "https://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix"
+    },
+    "tags": ["hr", "workforce", "powerbi-sample"]
+  },
+  {
+    "id": "powerbi-opportunity",
+    "name": "Opportunity Analysis Sample",
+    "tool": "power-bi",
+    "formats": ["pbix"],
+    "chartTypes": ["bar", "pie", "scatter"],
+    "description": "ソフトウェア企業の営業案件パイプラインを分析するPower BIサンプル。",
+    "longDescription": "ソフトウェア企業のセールスチームが扱う営業案件（オポチュニティ）を分析するPower BIサンプルレポート。案件規模・成約率・販売チャネル・地域別・担当者別のパフォーマンスを可視化します。CRMデータの分析例として参考になります。",
+    "license": "Microsoft Sample Data",
+    "source": "https://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix",
+    "downloadUrls": {
+      "pbix": "https://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix"
+    },
+    "tags": ["sales", "crm", "powerbi-sample"]
+  },
+  {
+    "id": "rawgraphs-treemap-orchestra",
+    "name": "Orchestra (Treemap)",
+    "tool": "rawgraphs",
+    "formats": ["tsv"],
+    "chartTypes": ["treemap"],
+    "description": "オーケストラの楽器構成をツリーマップで可視化するためのサンプルデータ。",
+    "longDescription": "RAWGraphsのツリーマップチャートのサンプルデータセット。オーケストラ内の楽器グループ（弦楽器・管楽器・打楽器など）と各楽器の編成人数を階層構造で示します。階層型データの可視化入門として適しています。",
+    "rows": 30,
+    "columns": 3,
+    "sizeKb": 1,
+    "license": "MIT",
+    "source": "https://github.com/data-visualization-lectures/rawgraph-sample-datasets",
+    "downloadUrls": {
+      "tsv": "https://raw.githubusercontent.com/data-visualization-lectures/rawgraph-sample-datasets/main/Treemap%20-%20Orchestra.tsv"
+    },
+    "tags": ["music", "hierarchy", "treemap"]
+  },
+  {
+    "id": "rawgraphs-sankey-energy",
+    "name": "Energy Flows (Sankey)",
+    "tool": "rawgraphs",
+    "formats": ["tsv"],
+    "chartTypes": ["area", "bar"],
+    "description": "エネルギーの生産から消費までのフローをサンキー図で可視化するためのデータ。",
+    "longDescription": "RAWGraphsのサンキー図サンプルデータセット。一次エネルギー（石油・石炭・天然ガス・再生可能エネルギー等）から最終消費（産業・運輸・家庭等）までのフロー量を示します。エネルギー転換の全体像を把握するのに適した教材データです。",
+    "rows": 48,
+    "columns": 3,
+    "sizeKb": 1,
+    "license": "MIT",
+    "source": "https://github.com/data-visualization-lectures/rawgraph-sample-datasets",
+    "downloadUrls": {
+      "tsv": "https://raw.githubusercontent.com/data-visualization-lectures/rawgraph-sample-datasets/main/Sankey%20diagram%20-%20Energy%20flows.tsv"
+    },
+    "tags": ["energy", "flow", "sankey"]
+  },
+  {
+    "id": "rawgraphs-bubble-movies",
+    "name": "Top 50 Grossing Movies (Bubble)",
+    "tool": "rawgraphs",
+    "formats": ["tsv"],
+    "chartTypes": ["bubble", "scatter"],
+    "description": "全世界の興行収入トップ50映画をバブルチャートで可視化するためのデータ。",
+    "longDescription": "RAWGraphsのバブルチャートサンプルデータセット。全世界興行収入ランキング上位50作品のタイトル・製作年・ジャンル・収入を収録しています。映画産業のトレンドや人気ジャンルの分布を視覚的に探索できます。",
+    "rows": 50,
+    "columns": 5,
+    "sizeKb": 2,
+    "license": "MIT",
+    "source": "https://github.com/data-visualization-lectures/rawgraph-sample-datasets",
+    "downloadUrls": {
+      "tsv": "https://raw.githubusercontent.com/data-visualization-lectures/rawgraph-sample-datasets/main/Bubble%20Chart%20-%20TOP%2050%20Groossing%20Movies.tsv"
+    },
+    "tags": ["movies", "entertainment", "bubble"]
+  },
+  {
+    "id": "rawgraphs-streamgraph-olympics",
+    "name": "Olympics Medals (Streamgraph)",
+    "tool": "rawgraphs",
+    "formats": ["tsv"],
+    "chartTypes": ["area", "line"],
+    "description": "オリンピックの開催年ごとの国別メダル獲得数をストリームグラフで可視化するデータ。",
+    "longDescription": "RAWGraphsのストリームグラフサンプルデータセット。夏季オリンピック歴代大会における各国のメダル獲得数の推移を示します。国際的なスポーツ強国の盛衰や、参加国・メダル数の増加トレンドを時系列で探索できます。",
+    "rows": 100,
+    "columns": 3,
+    "sizeKb": 3,
+    "license": "MIT",
+    "source": "https://github.com/data-visualization-lectures/rawgraph-sample-datasets",
+    "downloadUrls": {
+      "tsv": "https://raw.githubusercontent.com/data-visualization-lectures/rawgraph-sample-datasets/main/Streamgraph%20-%20Olympics%20Medals.tsv"
+    },
+    "tags": ["sports", "olympics", "time-series"]
+  },
+  {
+    "id": "rawgraphs-radar-fifa",
+    "name": "FIFA Players (Radar)",
+    "tool": "rawgraphs",
+    "formats": ["tsv"],
+    "chartTypes": ["bar", "scatter"],
+    "description": "FIFAのサッカー選手のスキル統計をレーダーチャートで比較するためのデータ。",
+    "longDescription": "RAWGraphsのレーダーチャートサンプルデータセット。FIFA（サッカーゲーム）の選手データから抜粋したスキル値（スピード・シュート・パス・ドリブル・守備・フィジカル）を収録。複数選手のスキルバランスを一目で比較するのに適しています。",
+    "rows": 100,
+    "columns": 8,
+    "sizeKb": 4,
+    "license": "MIT",
+    "source": "https://github.com/data-visualization-lectures/rawgraph-sample-datasets",
+    "downloadUrls": {
+      "tsv": "https://raw.githubusercontent.com/data-visualization-lectures/rawgraph-sample-datasets/main/Radar%20Chart%20-%20Fifa%20players.tsv"
+    },
+    "tags": ["sports", "soccer", "radar"]
+  },
+  {
+    "id": "rawgraphs-alluvial-hate-crimes",
+    "name": "Hate Crimes in New York (Alluvial)",
+    "tool": "rawgraphs",
+    "formats": ["tsv"],
+    "chartTypes": ["bar", "area"],
+    "description": "ニューヨーク市のヘイトクライムを動機・偏見カテゴリ・犯罪種別でアリュビアル図に可視化するデータ。",
+    "longDescription": "RAWGraphsのアリュビアル（サンキー）図サンプルデータセット。ニューヨーク市で報告されたヘイトクライムを動機・偏見カテゴリ・犯罪種別の3次元でフロー可視化します。社会問題のカテゴリ間関係を視覚的に探索する例として使用されます。",
+    "license": "MIT",
+    "source": "https://github.com/data-visualization-lectures/rawgraph-sample-datasets",
+    "downloadUrls": {
+      "tsv": "https://raw.githubusercontent.com/data-visualization-lectures/rawgraph-sample-datasets/main/Alluvial%20diagram%20-%20Hate%20crimes%20in%20New%20York.tsv"
+    },
+    "tags": ["social", "crime", "alluvial"]
+  },
+  {
+    "id": "rawgraphs-arc-lannister",
+    "name": "Lannister vs Stark Relationships (Arc Diagram)",
+    "tool": "rawgraphs",
+    "formats": ["tsv"],
+    "chartTypes": ["map"],
+    "description": "ゲーム・オブ・スローンズのラニスター家とスターク家の登場人物関係をアーク図で示すデータ。",
+    "longDescription": "RAWGraphsのアーク図サンプルデータセット。ドラマ「ゲーム・オブ・スローンズ」に登場するラニスター家・スターク家の人物間の関係性（婚姻・兄弟・主従など）をノードとアークで可視化します。フィクション作品の人物相関図の作成例として使われます。",
+    "license": "MIT",
+    "source": "https://github.com/data-visualization-lectures/rawgraph-sample-datasets",
+    "downloadUrls": {
+      "tsv": "https://raw.githubusercontent.com/data-visualization-lectures/rawgraph-sample-datasets/main/Arc%20diagrams%20-%20Lannister%20vs%20Starck%20relationships.tsv"
+    },
+    "tags": ["network", "fiction", "relationships"]
+  },
+  {
+    "id": "rawgraphs-bar-netflix",
+    "name": "Netflix Original Series (Bar Chart)",
+    "tool": "rawgraphs",
+    "formats": ["tsv"],
+    "chartTypes": ["bar"],
+    "description": "Netflixオリジナルシリーズの配信データをバーチャートで可視化するためのデータ。",
+    "longDescription": "RAWGraphsの棒グラフサンプルデータセット。Netflixが配信するオリジナルシリーズのジャンル・配信年・評価などを収録。ストリーミングコンテンツのトレンド分析や棒グラフの基本的な作成練習に使用できます。",
+    "license": "MIT",
+    "source": "https://github.com/data-visualization-lectures/rawgraph-sample-datasets",
+    "downloadUrls": {
+      "tsv": "https://raw.githubusercontent.com/data-visualization-lectures/rawgraph-sample-datasets/main/Bar%20chart%20-%20Netflix%20Original%20Series.tsv"
+    },
+    "tags": ["media", "streaming", "bar"]
+  },
+  {
+    "id": "rawgraphs-beeswarm-wages",
+    "name": "NY Mean Wages (Beeswarm)",
+    "tool": "rawgraphs",
+    "formats": ["tsv"],
+    "chartTypes": ["scatter", "histogram"],
+    "description": "ニューヨーク州の職種別平均賃金をビースウォームプロットで可視化するためのデータ。",
+    "longDescription": "RAWGraphsのビースウォーム（蜂群）プロットサンプルデータセット。ニューヨーク州における様々な職種の平均賃金を個々のドットで表示し、分布とばらつきを同時に示します。収入分布の可視化手法を学ぶのに適した教材データです。",
+    "license": "MIT",
+    "source": "https://github.com/data-visualization-lectures/rawgraph-sample-datasets",
+    "downloadUrls": {
+      "tsv": "https://raw.githubusercontent.com/data-visualization-lectures/rawgraph-sample-datasets/main/Beeswarm%20plot%20-%20NY%20mean%20wages.tsv"
+    },
+    "tags": ["economics", "wages", "distribution"]
+  },
+  {
+    "id": "rawgraphs-bump-milan",
+    "name": "Foreign Residents in Milan (Bump Chart)",
+    "tool": "rawgraphs",
+    "formats": ["tsv"],
+    "chartTypes": ["line"],
+    "description": "ミラノ市の外国人居住者の国別ランキング推移をバンプチャートで可視化するデータ。",
+    "longDescription": "RAWGraphsのバンプチャートサンプルデータセット。ミラノ市に居住する外国人の国籍別ランキングの年次推移を示します。各国からの移民・居住者数の変化と国別順位の入れ替わりを視覚的に追うことができます。",
+    "license": "MIT",
+    "source": "https://github.com/data-visualization-lectures/rawgraph-sample-datasets",
+    "downloadUrls": {
+      "tsv": "https://raw.githubusercontent.com/data-visualization-lectures/rawgraph-sample-datasets/main/Bump%20chart%20-%20Foreign%20residents%20in%20Milan.tsv"
+    },
+    "tags": ["demographics", "migration", "ranking"]
+  },
+  {
+    "id": "rawgraphs-circle-packing-cities",
+    "name": "Most Populated Cities (Circle Packing)",
+    "tool": "rawgraphs",
+    "formats": ["tsv"],
+    "chartTypes": ["bubble", "treemap"],
+    "description": "世界の人口上位都市をサークルパッキングで可視化するためのデータ。",
+    "longDescription": "RAWGraphsのサークルパッキングサンプルデータセット。世界で最も人口の多い都市をバブルの大きさで表し、地域・大陸別に色分けしてネスト構造で配置します。都市人口の規模比較や地域分布の把握に適しています。",
+    "license": "MIT",
+    "source": "https://github.com/data-visualization-lectures/rawgraph-sample-datasets",
+    "downloadUrls": {
+      "tsv": "https://raw.githubusercontent.com/data-visualization-lectures/rawgraph-sample-datasets/main/Circle%20Packing%20-%20Most%20populated%20cities.tsv"
+    },
+    "tags": ["demographics", "cities", "hierarchy"]
+  },
+  {
+    "id": "rawgraphs-contour-paris-temp",
+    "name": "Mean Temperature in Paris 1944-1945 (Contour)",
+    "tool": "rawgraphs",
+    "formats": ["tsv"],
+    "chartTypes": ["heatmap", "scatter"],
+    "description": "パリの1944〜1945年の月別・時間別平均気温をコンタープロットで可視化するデータ。",
+    "longDescription": "RAWGraphsのコンタープロットサンプルデータセット。第二次世界大戦末期のパリにおける1944〜1945年の気温記録を時間帯×月のマトリクスで示します。気温の周期的パターンや季節変化をコンター（等値線）で可視化する手法の練習に使えます。",
+    "license": "MIT",
+    "source": "https://github.com/data-visualization-lectures/rawgraph-sample-datasets",
+    "downloadUrls": {
+      "tsv": "https://raw.githubusercontent.com/data-visualization-lectures/rawgraph-sample-datasets/main/Contour%20plot%20-%20Mean%20temperature%20in%20Paris%201944-1945.tsv"
+    },
+    "tags": ["climate", "history", "heatmap"]
+  },
+  {
+    "id": "rawgraphs-convex-hull-iris",
+    "name": "Iris Flowers (Convex Hull)",
+    "tool": "rawgraphs",
+    "formats": ["tsv"],
+    "chartTypes": ["scatter"],
+    "description": "アヤメの花の計測データをコンベックスハルで種別クラスタを可視化するためのデータ。",
+    "longDescription": "RAWGraphsのコンベックスハル（凸包）サンプルデータセット。定番のアヤメ（Iris）データセットを用い、花びら・がく片の長さ・幅の2次元散布図上に種別ごとのコンベックスハル（凸包）を描画します。クラスタの分離度を視覚的に確認する手法の例です。",
+    "rows": 150,
+    "columns": 5,
+    "license": "MIT",
+    "source": "https://github.com/data-visualization-lectures/rawgraph-sample-datasets",
+    "downloadUrls": {
+      "tsv": "https://raw.githubusercontent.com/data-visualization-lectures/rawgraph-sample-datasets/main/Convex%20hull%20-%20Iris%20flowers.tsv"
+    },
+    "tags": ["classic", "clustering", "iris"]
+  },
+  {
+    "id": "rawgraphs-dendrogram-felidae",
+    "name": "Felidae Classification (Dendrogram)",
+    "tool": "rawgraphs",
+    "formats": ["tsv"],
+    "chartTypes": ["treemap"],
+    "description": "ネコ科（Felidae）の分類学的階層をデンドログラムで可視化するためのデータ。",
+    "longDescription": "RAWGraphsのデンドログラムサンプルデータセット。ネコ科（Felidae）に属するライオン・トラ・チーターなど各種動物の分類学的階層（科→族→属→種）をツリー構造で示します。生物分類学の階層データをデンドログラムで表現する手法の学習に適しています。",
+    "license": "MIT",
+    "source": "https://github.com/data-visualization-lectures/rawgraph-sample-datasets",
+    "downloadUrls": {
+      "tsv": "https://raw.githubusercontent.com/data-visualization-lectures/rawgraph-sample-datasets/main/Dendrogram%20-%20Felidae%20classification.tsv"
+    },
+    "tags": ["biology", "taxonomy", "hierarchy"]
+  },
+  {
+    "id": "rawgraphs-gantt-italian-pms",
+    "name": "Italian PMs and Presidents (Gantt)",
+    "tool": "rawgraphs",
+    "formats": ["tsv"],
+    "chartTypes": ["bar", "line"],
+    "description": "イタリアの歴代首相と大統領の在任期間をガントチャートで可視化するデータ。",
+    "longDescription": "RAWGraphsのガントチャートサンプルデータセット。イタリア共和国の歴代首相（Presidente del Consiglio）と大統領（Presidente della Repubblica）の就任・退任期間を時系列バーで示します。政治的任期の長さや重複・交代パターンを視覚化する手法の例です。",
+    "license": "MIT",
+    "source": "https://github.com/data-visualization-lectures/rawgraph-sample-datasets",
+    "downloadUrls": {
+      "tsv": "https://raw.githubusercontent.com/data-visualization-lectures/rawgraph-sample-datasets/main/Gantt%20chart%20-%20Italian%20PMs%20and%20presidents.tsv"
+    },
+    "tags": ["politics", "history", "gantt"]
+  },
+  {
+    "id": "rawgraphs-hexbin-basketball",
+    "name": "Basketball Shots (Hexbin)",
+    "tool": "rawgraphs",
+    "formats": ["tsv"],
+    "chartTypes": ["heatmap", "scatter"],
+    "description": "バスケットボールのシュート位置データをヘックスビン（六角形ビン）で密度可視化するデータ。",
+    "longDescription": "RAWGraphsのヘックスビンサンプルデータセット。バスケットボールコート上での全シュート位置（x・y座標）を収録し、六角形のビンに集計して密度分布を表示します。スポーツアナリティクスにおけるシュートゾーン分析の可視化手法の例です。",
+    "license": "MIT",
+    "source": "https://github.com/data-visualization-lectures/rawgraph-sample-datasets",
+    "downloadUrls": {
+      "tsv": "https://raw.githubusercontent.com/data-visualization-lectures/rawgraph-sample-datasets/main/Hexbin%20-%20basketball%20shots.tsv"
+    },
+    "tags": ["sports", "basketball", "density"]
+  },
+  {
+    "id": "rawgraphs-horizon-eu-prices",
+    "name": "EU Index of Consumer Prices (Horizon Graph)",
+    "tool": "rawgraphs",
+    "formats": ["tsv", "csv"],
+    "chartTypes": ["line", "area"],
+    "description": "EU各国の消費者物価指数の推移をホライゾングラフで多系列比較するためのデータ。",
+    "longDescription": "RAWGraphsのホライゾングラフサンプルデータセット。EU加盟各国の消費者物価指数（CPI）の長期推移を収録。ホライゾングラフは多数の時系列を限られたスペースで比較するのに特化したチャートタイプで、各国の物価動向の一覧比較に適しています。",
+    "license": "MIT",
+    "source": "https://github.com/data-visualization-lectures/rawgraph-sample-datasets",
+    "downloadUrls": {
+      "tsv": "https://raw.githubusercontent.com/data-visualization-lectures/rawgraph-sample-datasets/main/Horizon%20Graph%20-%20EU%20Index%20of%20consumer%20prices.tsv",
+      "csv": "https://raw.githubusercontent.com/data-visualization-lectures/rawgraph-sample-datasets/main/Horizon-Graph-EU-Index-of-consumer-prices.csv"
+    },
+    "tags": ["economics", "eu", "time-series"]
+  },
+  {
+    "id": "rawgraphs-line-us-elections",
+    "name": "US Presidential Elections (Line Graph)",
+    "tool": "rawgraphs",
+    "formats": ["tsv"],
+    "chartTypes": ["line", "bar"],
+    "description": "米国大統領選挙の歴代得票データを折れ線グラフで可視化するためのデータ。",
+    "longDescription": "RAWGraphsの折れ線グラフサンプルデータセット。米国大統領選挙の歴代得票率・得票数の推移を収録。主要政党（共和党・民主党）の得票率の変化や歴史的な転換点を時系列で探索できます。",
+    "license": "MIT",
+    "source": "https://github.com/data-visualization-lectures/rawgraph-sample-datasets",
+    "downloadUrls": {
+      "tsv": "https://raw.githubusercontent.com/data-visualization-lectures/rawgraph-sample-datasets/main/Line%20Graph%20-%20US%20Presidential%20Elections.tsv"
+    },
+    "tags": ["politics", "usa", "elections"]
+  },
+  {
+    "id": "rawgraphs-line-riaa-music",
+    "name": "RIAA Music Format Revenues (Line Chart)",
+    "tool": "rawgraphs",
+    "formats": ["tsv"],
+    "chartTypes": ["line", "area"],
+    "description": "米国音楽産業の収益をフォーマット（CD・ストリーミング・ダウンロード等）別に示す時系列データ。",
+    "longDescription": "RAWGraphsの折れ線グラフサンプルデータセット。RIAA（全米レコード協会）が公開する音楽産業の年間収益をフォーマット別（LP・カセット・CD・デジタルダウンロード・ストリーミング等）に分解した時系列データ。音楽消費メディアの変遷を可視化する例として広く使われます。",
+    "license": "MIT",
+    "source": "https://github.com/data-visualization-lectures/rawgraph-sample-datasets",
+    "downloadUrls": {
+      "tsv": "https://raw.githubusercontent.com/data-visualization-lectures/rawgraph-sample-datasets/main/Line%20chart%20-%20RIAA%20Music%20format%20revenues.tsv"
+    },
+    "tags": ["music", "media", "economics"]
+  },
+  {
+    "id": "rawgraphs-matrix-letters",
+    "name": "Letters Frequencies by Language (Matrix Plot)",
+    "tool": "rawgraphs",
+    "formats": ["tsv"],
+    "chartTypes": ["heatmap"],
+    "description": "各言語におけるアルファベットの出現頻度をマトリックスプロットで比較するデータ。",
+    "longDescription": "RAWGraphsのマトリックスプロットサンプルデータセット。英語・フランス語・ドイツ語・スペイン語・ポルトガル語など複数言語のテキストコーパスにおける各アルファベットの出現頻度を2次元マトリックスで可視化します。言語間の文字使用パターンの違いを直感的に比較できます。",
+    "license": "MIT",
+    "source": "https://github.com/data-visualization-lectures/rawgraph-sample-datasets",
+    "downloadUrls": {
+      "tsv": "https://raw.githubusercontent.com/data-visualization-lectures/rawgraph-sample-datasets/main/Matrix%20Plot%20-%20Letters%20frequencies%20by%20language.tsv"
+    },
+    "tags": ["linguistics", "text", "heatmap"]
+  },
+  {
+    "id": "rawgraphs-multiset-bar-happiness",
+    "name": "Happiness Index (Multiset Bar Chart)",
+    "tool": "rawgraphs",
+    "formats": ["tsv"],
+    "chartTypes": ["bar"],
+    "description": "世界幸福度指数の国別・指標別スコアをマルチセット棒グラフで可視化するデータ。",
+    "longDescription": "RAWGraphsのマルチセット棒グラフサンプルデータセット。国連が毎年発表する世界幸福度報告（World Happiness Report）の各国スコアを構成指標（GDP・社会的支援・健康寿命・自由度・寛容さ・腐敗認知度）に分解して複数系列の棒グラフで比較します。",
+    "license": "MIT",
+    "source": "https://github.com/data-visualization-lectures/rawgraph-sample-datasets",
+    "downloadUrls": {
+      "tsv": "https://raw.githubusercontent.com/data-visualization-lectures/rawgraph-sample-datasets/main/Multiset%20Barchart%20-%20Happiness%20Index.tsv"
+    },
+    "tags": ["economics", "social", "happiness"]
+  },
+  {
+    "id": "rawgraphs-slope-seriea",
+    "name": "Premier Serie A Ranking (Slope Graph)",
+    "tool": "rawgraphs",
+    "formats": ["tsv"],
+    "chartTypes": ["line"],
+    "description": "イタリアのサッカーリーグ（セリエA）の順位変動をスロープグラフで可視化するデータ。",
+    "longDescription": "RAWGraphsのスロープグラフサンプルデータセット。イタリア・セリエAのシーズン間順位変動を示します。スロープグラフは2時点間の順位変化を傾きで表現するシンプルなチャートで、上昇・降格クラブの動向を一目で把握できます。",
+    "license": "MIT",
+    "source": "https://github.com/data-visualization-lectures/rawgraph-sample-datasets",
+    "downloadUrls": {
+      "tsv": "https://raw.githubusercontent.com/data-visualization-lectures/rawgraph-sample-datasets/main/Slope%20graph%20-%20Premier%20SerieA%20ranking.tsv"
+    },
+    "tags": ["sports", "soccer", "ranking"]
+  },
+  {
+    "id": "rawgraphs-stacked-bar-gdp",
+    "name": "GDP Sector Composition (Stacked Bar Chart)",
+    "tool": "rawgraphs",
+    "formats": ["tsv"],
+    "chartTypes": ["bar"],
+    "description": "各国のGDPを産業部門（農業・製造業・サービス業等）別構成で積み上げ棒グラフ表示するデータ。",
+    "longDescription": "RAWGraphsの積み上げ棒グラフサンプルデータセット。複数の主要国のGDP産業別構成比（農業・工業・製造業・サービス業等）を収録。国ごとの産業構造の違いや、先進国・新興国・途上国の経済構造の差異を比較する教材として使えます。",
+    "license": "MIT",
+    "source": "https://github.com/data-visualization-lectures/rawgraph-sample-datasets",
+    "downloadUrls": {
+      "tsv": "https://raw.githubusercontent.com/data-visualization-lectures/rawgraph-sample-datasets/main/Stacked%20barchart%20-%20GDP%20sector%20composition.tsv"
+    },
+    "tags": ["economics", "gdp", "countries"]
+  },
+  {
+    "id": "rawgraphs-sunburst-wine",
+    "name": "Wine Aromas (Sunburst)",
+    "tool": "rawgraphs",
+    "formats": ["tsv"],
+    "chartTypes": ["pie", "treemap"],
+    "description": "ワインのアロマ（香り）の分類階層をサンバーストチャートで可視化するためのデータ。",
+    "longDescription": "RAWGraphsのサンバーストサンプルデータセット。ワインの香り（アロマ）を大分類（フルーティー・花・スパイスなど）から小分類（特定の果実・花の種類等）へと階層的に分類したデータを収録。サンバーストは放射状に広がる階層構造の可視化に適しており、ワインの複雑な香りの体系を直感的に示します。",
+    "license": "MIT",
+    "source": "https://github.com/data-visualization-lectures/rawgraph-sample-datasets",
+    "downloadUrls": {
+      "tsv": "https://raw.githubusercontent.com/data-visualization-lectures/rawgraph-sample-datasets/main/Sunburst%20-%20Wine%20Aromas.tsv"
+    },
+    "tags": ["food", "hierarchy", "sunburst"]
+  },
+  {
+    "id": "rawgraphs-violin-ny-weather",
+    "name": "Weather in New York (Violin Plot)",
+    "tool": "rawgraphs",
+    "formats": ["tsv"],
+    "chartTypes": ["histogram", "scatter"],
+    "description": "ニューヨーク市の気象データをバイオリンプロットで分布可視化するためのデータ。",
+    "longDescription": "RAWGraphsのバイオリンプロットサンプルデータセット。ニューヨーク市の気温・湿度・風速などの気象観測データを月別または季節別に集計し、各変数の分布形状をバイオリン型のカーネル密度推定で表示します。箱ひげ図より詳細な分布の形状を把握するのに適しています。",
+    "license": "MIT",
+    "source": "https://github.com/data-visualization-lectures/rawgraph-sample-datasets",
+    "downloadUrls": {
+      "tsv": "https://raw.githubusercontent.com/data-visualization-lectures/rawgraph-sample-datasets/main/Violin%20plot%20-%20Weather%20in%20New%20York.tsv"
+    },
+    "tags": ["climate", "weather", "distribution"]
+  },
+  {
+    "id": "rawgraphs-chord-migration",
+    "name": "Estimated Migration Flows (Chord Diagram)",
+    "tool": "rawgraphs",
+    "formats": ["csv"],
+    "chartTypes": ["map", "area"],
+    "description": "世界の主要マクロ地域間の推定移民フローをコード図で可視化するためのデータ。",
+    "longDescription": "RAWGraphsのコード（弦）図サンプルデータセット。国連推計による世界の主要マクロ地域（アジア・アフリカ・ヨーロッパ・南北アメリカ・オセアニア）間の推定移民フロー量を収録。コード図は出発地と目的地の間の流量を弦の太さで表し、国際移民の双方向フローを直感的に示します。",
+    "license": "MIT",
+    "source": "https://github.com/data-visualization-lectures/rawgraph-sample-datasets",
+    "downloadUrls": {
+      "csv": "https://raw.githubusercontent.com/data-visualization-lectures/rawgraph-sample-datasets/main/Chord%20Diagram%20-%20Estimated%20migration%20flows%20between%20macro-areas.csv"
+    },
+    "tags": ["demographics", "migration", "flow"]
+  },
+  {
+    "id": "gephi-les-miserables",
+    "name": "Les Misérables (Network)",
+    "tool": "gephi",
+    "formats": ["gexf", "json"],
+    "chartTypes": ["map"],
+    "description": "レ・ミゼラブルの登場人物の共起関係をネットワーク図で可視化するサンプルデータ。",
+    "longDescription": "ヴィクトル・ユゴーの小説『レ・ミゼラブル』の登場人物間の共起関係（同じ章に登場する頻度）をノードとエッジで表したネットワークデータ。77ノード・254エッジからなる中規模グラフで、ネットワーク可視化の定番チュートリアルデータとして広く使われています。",
+    "rows": 77,
+    "columns": 2,
+    "sizeKb": 12,
+    "license": "Public Domain",
+    "source": "https://github.com/gephi/gephi-lite/tree/main/packages/gephi-lite/public/samples",
+    "downloadUrls": {
+      "gexf": "https://raw.githubusercontent.com/gephi/gephi-lite/main/packages/gephi-lite/public/samples/Les%20Miserables.gexf",
+      "json": "https://raw.githubusercontent.com/gephi/gephi-lite/main/packages/gephi-lite/public/samples/Les%20Miserables.json"
+    },
+    "tags": ["network", "literature", "community"]
+  },
+  {
+    "id": "gephi-java",
+    "name": "Java Dependency Graph",
+    "tool": "gephi",
+    "formats": ["gexf"],
+    "chartTypes": ["map"],
+    "description": "Javaのクラス依存関係をネットワーク図で可視化するサンプルデータ。",
+    "longDescription": "Javaのクラス間の依存関係をグラフ構造で表したサンプルデータ。ノードが各クラス、エッジが依存関係を表します。ソフトウェアアーキテクチャのネットワーク分析やコード品質の可視化手法を学ぶのに適しています。",
+    "license": "Apache 2.0",
+    "source": "https://github.com/gephi/gephi-lite/tree/main/packages/gephi-lite/public/samples",
+    "downloadUrls": {
+      "gexf": "https://raw.githubusercontent.com/gephi/gephi-lite/main/packages/gephi-lite/public/samples/Java.gexf"
+    },
+    "tags": ["network", "software", "dependency"]
+  },
+  {
+    "id": "gephi-power-grid",
+    "name": "Power Grid Network",
+    "tool": "gephi",
+    "formats": ["gexf"],
+    "chartTypes": ["map"],
+    "description": "米国西部の電力グリッドのネットワーク構造を可視化するサンプルデータ。",
+    "longDescription": "米国西部の電力グリッド（送電網）をグラフ構造で表したサンプルデータ。発電所・変電所・送電線のトポロジーを示す実世界のインフラネットワークデータで、スケールフリーネットワークの研究などによく使われる古典的なデータセットです。",
+    "rows": 4941,
+    "sizeKb": 210,
+    "license": "Public Domain",
+    "source": "https://github.com/gephi/gephi-lite/tree/main/packages/gephi-lite/public/samples",
+    "downloadUrls": {
+      "gexf": "https://raw.githubusercontent.com/gephi/gephi-lite/main/packages/gephi-lite/public/samples/Power%20Grid.gexf"
+    },
+    "tags": ["network", "infrastructure", "real-world"]
+  },
+  {
+    "id": "gephi-airlines",
+    "name": "Airlines Network",
+    "tool": "gephi",
+    "formats": ["graphml"],
+    "chartTypes": ["map"],
+    "description": "世界の航空路線ネットワークをグラフ形式で可視化するサンプルデータ。",
+    "longDescription": "世界各地の空港と航空路線をノード・エッジで表したネットワークデータ。ハブ空港の中心性分析や地域間の航空ネットワーク構造の探索に適しています。GraphML形式のネットワークデータとして、Gephi・Cytoscapeなどで読み込み可能です。",
+    "license": "Public Domain",
+    "source": "https://github.com/gephi/gephi-lite/tree/main/packages/gephi-lite/public/samples",
+    "downloadUrls": {
+      "graphml": "https://raw.githubusercontent.com/gephi/gephi-lite/main/packages/gephi-lite/public/samples/airlines.graphml"
+    },
+    "tags": ["network", "aviation", "geography"]
+  },
+  {
+    "id": "seaborn-anscombe",
+    "name": "Anscombe's Quartet",
+    "tool": "seaborn",
+    "formats": ["csv"],
+    "chartTypes": ["scatter", "line"],
+    "description": "統計的性質が同一でも視覚的に異なる4つのデータセット（アンスコムの数値例）。",
+    "longDescription": "統計学者フランシス・アンスコムが1973年に考案した4組のデータセット。それぞれ平均・分散・相関係数・回帰直線がほぼ同一ですが、散布図で可視化すると全く異なる形状を示します。「統計だけでなくデータを可視化することの重要性」を示す教材として世界中で広く使われています。",
+    "rows": 44,
+    "columns": 3,
+    "sizeKb": 1,
+    "license": "BSD",
+    "source": "https://github.com/mwaskom/seaborn-data",
+    "downloadUrls": {
+      "csv": "https://raw.githubusercontent.com/mwaskom/seaborn-data/master/anscombe.csv"
+    },
+    "tags": ["classic", "statistics", "visualization"]
+  },
+  {
+    "id": "seaborn-diamonds",
+    "name": "Diamonds",
+    "tool": "seaborn",
+    "formats": ["csv"],
+    "chartTypes": ["scatter", "histogram", "bar"],
+    "description": "ダイヤモンドの価格とカット・カラー・クラリティ等の特徴量データセット。",
+    "longDescription": "約54,000件のダイヤモンドの特徴量と価格を収録したデータセット。カット品質・色（D〜J）・透明度・カラット・テーブル・奥行き・幅などの変数を含みます。価格予測・回帰分析・多変量可視化の練習に広く使用されています。",
+    "rows": 53940,
+    "columns": 10,
+    "sizeKb": 3000,
+    "license": "BSD",
+    "source": "https://github.com/mwaskom/seaborn-data",
+    "downloadUrls": {
+      "csv": "https://raw.githubusercontent.com/mwaskom/seaborn-data/master/diamonds.csv"
+    },
+    "tags": ["regression", "multivariate", "price-prediction"]
+  },
+  {
+    "id": "seaborn-mpg",
+    "name": "Auto MPG",
+    "tool": "seaborn",
+    "formats": ["csv"],
+    "chartTypes": ["scatter", "bar", "line"],
+    "description": "自動車の燃費（MPG）と排気量・馬力・重量等の特徴量データセット。",
+    "longDescription": "1970〜1982年製造の自動車の燃費（Miles Per Gallon）と各種スペックを収録したUCI機械学習リポジトリの定番データセット。シリンダー数・排気量・馬力・重量・加速性能・製造年・産地（米・欧・日）などを含み、燃費予測や自動車産業の変遷分析に使われます。",
+    "rows": 398,
+    "columns": 9,
+    "sizeKb": 18,
+    "license": "BSD",
+    "source": "https://github.com/mwaskom/seaborn-data",
+    "downloadUrls": {
+      "csv": "https://raw.githubusercontent.com/mwaskom/seaborn-data/master/mpg.csv"
+    },
+    "tags": ["automotive", "regression", "time-series"]
+  },
+  {
+    "id": "seaborn-planets",
+    "name": "Planets",
+    "tool": "seaborn",
+    "formats": ["csv"],
+    "chartTypes": ["scatter", "histogram", "bar"],
+    "description": "系外惑星の観測データ。発見方法・距離・公転周期・質量等を含む天文データセット。",
+    "longDescription": "2014年時点までに発見された系外惑星のカタログデータ。発見方法（ドップラー分光・トランジット・直接撮像等）・発見年・公転周期（日）・軌道長半径・質量（木星質量比）・距離（光年）を含みます。天文学・探索的データ解析・欠損値処理の練習に適しています。",
+    "rows": 1035,
+    "columns": 6,
+    "sizeKb": 35,
+    "license": "BSD",
+    "source": "https://github.com/mwaskom/seaborn-data",
+    "downloadUrls": {
+      "csv": "https://raw.githubusercontent.com/mwaskom/seaborn-data/master/planets.csv"
+    },
+    "tags": ["astronomy", "exoplanets", "missing-values"]
+  },
+  {
+    "id": "seaborn-anagrams",
+    "name": "Anagrams",
+    "tool": "seaborn",
+    "formats": ["csv"],
+    "chartTypes": ["bar", "scatter"],
+    "description": "注意条件（分割注意・集中注意）ごとのアナグラム正解数を記録した実験データ。",
+    "longDescription": "認知心理学の実験データ。参加者を「分割注意（divided）」と「集中注意（focused）」の条件に割り当て、複数回の試行でアナグラムを解かせた際の正解数を記録しています。被験者内・被験者間計画の分析や可視化の練習に使われます。",
+    "rows": 20,
+    "columns": 4,
+    "sizeKb": 1,
+    "license": "BSD",
+    "source": "https://github.com/mwaskom/seaborn-data",
+    "downloadUrls": {
+      "csv": "https://raw.githubusercontent.com/mwaskom/seaborn-data/master/anagrams.csv"
+    },
+    "tags": ["psychology", "experiment", "cognitive"]
+  },
+  {
+    "id": "seaborn-attention",
+    "name": "Attention",
+    "tool": "seaborn",
+    "formats": ["csv"],
+    "chartTypes": ["bar", "line", "scatter"],
+    "description": "注意タスクの実験データ。被験者・注意条件・解答数・スコアを収録。",
+    "longDescription": "認知心理学の注意タスク実験データ。被験者（subject）・注意条件（divided/focused）・解答数（solutions）・スコア（score）の列を含む60行のデータセット。グループ間の比較や繰り返し測定の可視化に使われます。",
+    "rows": 60,
+    "columns": 5,
+    "sizeKb": 2,
+    "license": "BSD",
+    "source": "https://github.com/mwaskom/seaborn-data",
+    "downloadUrls": {
+      "csv": "https://raw.githubusercontent.com/mwaskom/seaborn-data/master/attention.csv"
+    },
+    "tags": ["psychology", "experiment", "attention"]
+  },
+  {
+    "id": "seaborn-brain-networks",
+    "name": "Brain Networks",
+    "tool": "seaborn",
+    "formats": ["csv"],
+    "chartTypes": ["heatmap"],
+    "description": "脳の各領域間の機能的結合（相関係数）を収録した大規模マトリクスデータ。",
+    "longDescription": "脳画像研究で得られた脳領域間のネットワーク相関行列データ。行・列ともに脳の各領域を表し、セルの値がその領域ペアの機能的結合強度（相関係数）を示します。ヒートマップによるコネクトーム可視化や階層クラスタリングの実習に使用されます。",
+    "license": "BSD",
+    "source": "https://github.com/mwaskom/seaborn-data",
+    "downloadUrls": {
+      "csv": "https://raw.githubusercontent.com/mwaskom/seaborn-data/master/brain_networks.csv"
+    },
+    "tags": ["neuroscience", "fmri", "network", "correlation"]
+  },
+  {
+    "id": "seaborn-car-crashes",
+    "name": "Car Crashes",
+    "tool": "seaborn",
+    "formats": ["csv"],
+    "chartTypes": ["bar", "scatter", "map"],
+    "description": "米国各州の自動車事故率（スピード違反・飲酒・脇見等の原因別）データ。",
+    "longDescription": "米国全50州と首都ワシントンD.C.の交通事故統計。10万マイル走行あたりの死亡事故件数を、スピード違反・アルコール・注意散漫・携帯電話・非注意の原因別に分解したデータを収録。交通安全施策の州間比較や地図表示に適しています。",
+    "rows": 51,
+    "columns": 8,
+    "sizeKb": 3,
+    "license": "BSD",
+    "source": "https://github.com/mwaskom/seaborn-data",
+    "downloadUrls": {
+      "csv": "https://raw.githubusercontent.com/mwaskom/seaborn-data/master/car_crashes.csv"
+    },
+    "tags": ["traffic", "usa", "public-safety"]
+  },
+  {
+    "id": "seaborn-dots",
+    "name": "Dots",
+    "tool": "seaborn",
+    "formats": ["csv"],
+    "chartTypes": ["line", "scatter"],
+    "description": "ドットモーション知覚実験における時間・コヒーレンス・発火率の神経科学データ。",
+    "longDescription": "神経科学のドットモーション（視覚運動刺激）実験データ。アライン条件・選択・時間ポイント・コヒーレンス（刺激の一貫性）・ニューロンの発火率を収録。時系列ごとの発火率変化や条件間の比較に使われる神経科学実験の典型的データです。",
+    "rows": 848,
+    "columns": 6,
+    "sizeKb": 18,
+    "license": "BSD",
+    "source": "https://github.com/mwaskom/seaborn-data",
+    "downloadUrls": {
+      "csv": "https://raw.githubusercontent.com/mwaskom/seaborn-data/master/dots.csv"
+    },
+    "tags": ["neuroscience", "experiment", "time-series"]
+  },
+  {
+    "id": "seaborn-dowjones",
+    "name": "Dow Jones",
+    "tool": "seaborn",
+    "formats": ["csv"],
+    "chartTypes": ["line", "area"],
+    "description": "ダウ・ジョーンズ工業平均株価（DJIA）の月次終値時系列データ。",
+    "longDescription": "米国株式市場の代表的指数であるダウ・ジョーンズ工業平均（DJIA）の月次終値データ。日付と価格の2列からなるシンプルな時系列データで、株価トレンドの折れ線グラフ・面グラフ作成や時系列分析の入門練習に適しています。",
+    "rows": 105,
+    "columns": 2,
+    "sizeKb": 2,
+    "license": "BSD",
+    "source": "https://github.com/mwaskom/seaborn-data",
+    "downloadUrls": {
+      "csv": "https://raw.githubusercontent.com/mwaskom/seaborn-data/master/dowjones.csv"
+    },
+    "tags": ["finance", "stocks", "time-series"]
+  },
+  {
+    "id": "seaborn-exercise",
+    "name": "Exercise",
+    "tool": "seaborn",
+    "formats": ["csv"],
+    "chartTypes": ["line", "bar", "scatter"],
+    "description": "食事制限条件・運動種類・時間ごとの心拍数を計測した運動生理学実験データ。",
+    "longDescription": "運動生理学の実験データ。食事制限あり（low fat diet）・なしの被験者を対象に、安静・ウォーキング・ランニングの3条件で15・30・60分後の心拍数（pulse）を計測した縦断的実験データ。繰り返し測定のある実験計画の可視化に使われます。",
+    "rows": 90,
+    "columns": 6,
+    "sizeKb": 2,
+    "license": "BSD",
+    "source": "https://github.com/mwaskom/seaborn-data",
+    "downloadUrls": {
+      "csv": "https://raw.githubusercontent.com/mwaskom/seaborn-data/master/exercise.csv"
+    },
+    "tags": ["health", "physiology", "experiment"]
+  },
+  {
+    "id": "seaborn-fmri",
+    "name": "fMRI",
+    "tool": "seaborn",
+    "formats": ["csv"],
+    "chartTypes": ["line", "scatter"],
+    "description": "刺激イベントに対する脳領域（前頭前皮質・頭頂葉）の信号変化を記録したfMRIデータ。",
+    "longDescription": "機能的MRI（fMRI）実験データ。被験者・タイムポイント・イベント種別（stim/cue）・脳領域（parietal/frontal）・BOLD信号値の5列を含む1064行のデータ。神経科学における時系列グラフや条件間比較の可視化例として広く使われています。",
+    "rows": 1064,
+    "columns": 5,
+    "sizeKb": 22,
+    "license": "BSD",
+    "source": "https://github.com/mwaskom/seaborn-data",
+    "downloadUrls": {
+      "csv": "https://raw.githubusercontent.com/mwaskom/seaborn-data/master/fmri.csv"
+    },
+    "tags": ["neuroscience", "fmri", "time-series"]
+  },
+  {
+    "id": "seaborn-geyser",
+    "name": "Geyser (Old Faithful)",
+    "tool": "seaborn",
+    "formats": ["csv"],
+    "chartTypes": ["scatter", "histogram"],
+    "description": "イエローストーンの間欠泉「オールドフェイスフル」の噴出持続時間と次の噴出までの待機時間データ。",
+    "longDescription": "イエローストーン国立公園の間欠泉「オールドフェイスフル」の観測データ。噴出持続時間（duration）と次の噴出までの待機時間（waiting）の2変数272行のデータセット。2峰性の分布や散布図のクラスタリング可視化の定番教材です。",
+    "rows": 272,
+    "columns": 2,
+    "sizeKb": 3,
+    "license": "BSD",
+    "source": "https://github.com/mwaskom/seaborn-data",
+    "downloadUrls": {
+      "csv": "https://raw.githubusercontent.com/mwaskom/seaborn-data/master/geyser.csv"
+    },
+    "tags": ["geology", "distribution", "classic"]
+  },
+  {
+    "id": "seaborn-glue",
+    "name": "GLUE Benchmark",
+    "tool": "seaborn",
+    "formats": ["csv"],
+    "chartTypes": ["bar", "heatmap"],
+    "description": "自然言語処理の代表的ベンチマークGLUEにおける各モデルのタスク別スコアデータ。",
+    "longDescription": "自然言語処理（NLP）の標準的な評価ベンチマークGLUE（General Language Understanding Evaluation）のスコアデータ。BERT・GPT・ELMoなどの言語モデルとQNLI・SST・MNLIなどのタスクごとのスコアを収録。モデル比較の棒グラフやヒートマップ作成に使われます。",
+    "license": "BSD",
+    "source": "https://github.com/mwaskom/seaborn-data",
+    "downloadUrls": {
+      "csv": "https://raw.githubusercontent.com/mwaskom/seaborn-data/master/glue.csv"
+    },
+    "tags": ["nlp", "machine-learning", "benchmark"]
+  },
+  {
+    "id": "seaborn-healthexp",
+    "name": "Health Expenditure",
+    "tool": "seaborn",
+    "formats": ["csv"],
+    "chartTypes": ["scatter", "line"],
+    "description": "主要国の医療費支出（USD）と平均寿命の年次推移データ。",
+    "longDescription": "OECDデータに基づく主要国の医療費支出（一人当たりUSD）と平均寿命の1970年代以降の年次データ。アメリカ・イギリス・フランス・日本・ドイツ・カナダなどを収録。医療費と平均寿命の相関・散布図・時系列分析に使用されます。",
+    "rows": 274,
+    "columns": 4,
+    "sizeKb": 6,
+    "license": "BSD",
+    "source": "https://github.com/mwaskom/seaborn-data",
+    "downloadUrls": {
+      "csv": "https://raw.githubusercontent.com/mwaskom/seaborn-data/master/healthexp.csv"
+    },
+    "tags": ["health", "economics", "oecd", "time-series"]
+  },
+  {
+    "id": "seaborn-seaice",
+    "name": "Sea Ice",
+    "tool": "seaborn",
+    "formats": ["csv"],
+    "chartTypes": ["line", "area"],
+    "description": "北極・南極の海氷面積の月次推移データ（気候変動モニタリング用）。",
+    "longDescription": "NASA/NSSIDCが提供する北極・南極の海氷面積および面積（extent・area）の月次観測データ。年・月・データ型・地域・面積（百万平方km）の列を含む長期時系列データで、気候変動の可視化や季節性分析・長期トレンド分析に使われます。",
+    "rows": 14000,
+    "columns": 6,
+    "sizeKb": 450,
+    "license": "BSD",
+    "source": "https://github.com/mwaskom/seaborn-data",
+    "downloadUrls": {
+      "csv": "https://raw.githubusercontent.com/mwaskom/seaborn-data/master/seaice.csv"
+    },
+    "tags": ["climate", "environment", "time-series"]
+  },
+  {
+    "id": "seaborn-taxis",
+    "name": "Taxis",
+    "tool": "seaborn",
+    "formats": ["csv"],
+    "chartTypes": ["scatter", "bar", "histogram"],
+    "description": "ニューヨーク市のタクシー乗車データ。乗降地点・運賃・距離・チップ等を収録。",
+    "longDescription": "ニューヨーク市のタクシー乗車記録データ。乗車・降車の日時・場所（緯度経度・地区名）・乗客数・距離・運賃・チップ・支払方法・色（イエロー・グリーン）を収録した6433行のデータセット。地理的分布・運賃分析・時間帯別需要の可視化に適しています。",
+    "rows": 6433,
+    "columns": 14,
+    "sizeKb": 600,
+    "license": "BSD",
+    "source": "https://github.com/mwaskom/seaborn-data",
+    "downloadUrls": {
+      "csv": "https://raw.githubusercontent.com/mwaskom/seaborn-data/master/taxis.csv"
+    },
+    "tags": ["transportation", "nyc", "geospatial"]
+  }
+]
