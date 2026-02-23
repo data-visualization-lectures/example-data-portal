@@ -40,7 +40,7 @@ export function Sidebar({ tree }: SidebarProps) {
           <div className="w-7 h-7 rounded-md bg-indigo-600 flex items-center justify-center">
             <Database className="w-4 h-4 text-white" />
           </div>
-          <span className="font-semibold text-gray-900 text-sm">Data Portal</span>
+          <span className="font-semibold text-gray-900 text-sm">Example Data Portal</span>
         </Link>
       </div>
 
