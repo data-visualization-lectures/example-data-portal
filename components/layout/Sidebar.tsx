@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname, useSearchParams } from "next/navigation";
 import { useState } from "react";
-import { ChevronDown, ChevronRight, Database, LayoutDashboard } from "lucide-react";
+import { ChevronDown, ChevronRight, Database, ExternalLink, LayoutDashboard } from "lucide-react";
 import type { TreeNode } from "@/lib/types";
 import { TOOL_LABELS } from "@/lib/constants";
 
@@ -123,6 +123,28 @@ export function Sidebar({ tree }: SidebarProps) {
           );
         })}
       </nav>
+
+      {/* Footer links */}
+      <div className="p-3 border-t border-gray-100 space-y-1 shrink-0">
+        <a
+          href="https://visualizing.jp/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs text-gray-500 hover:text-indigo-600 hover:bg-gray-50 transition-colors"
+        >
+          <ExternalLink className="w-3 h-3 shrink-0" />
+          Visualizing.JP
+        </a>
+        <a
+          href="https://data-viz-lectures.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs text-gray-500 hover:text-indigo-600 hover:bg-gray-50 transition-colors"
+        >
+          <ExternalLink className="w-3 h-3 shrink-0" />
+          データ可視化講習
+        </a>
+      </div>
     </aside>
   );
 }
