@@ -1,4 +1,4 @@
-export type DataFormat = "csv" | "json" | "tsv" | "geojson" | "parquet" | "xlsx" | "xls" | "pbix" | "gexf" | "graphml";
+export type DataFormat = "csv" | "json" | "tsv" | "geojson" | "parquet" | "xlsx" | "xls" | "pbix" | "pbit" | "gexf" | "graphml";
 
 export type ChartType =
   | "bar"

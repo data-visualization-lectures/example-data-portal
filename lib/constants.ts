@@ -26,6 +26,7 @@ export const FORMAT_COLORS: Record<DataFormat, string> = {
   xlsx:    "bg-emerald-100 text-emerald-800",
   xls:     "bg-lime-100 text-lime-800",
   pbix:    "bg-yellow-100 text-yellow-800",
+  pbit:    "bg-amber-100 text-amber-800",
   gexf:    "bg-fuchsia-100 text-fuchsia-800",
   graphml: "bg-violet-100 text-violet-800",
 };
@@ -59,7 +60,7 @@ export const TOOL_COLORS: Record<ToolId, string> = {
   "gephi":           "bg-cyan-100 text-cyan-800",
 };
 
-export const ALL_FORMATS: DataFormat[] = ["csv", "json", "tsv", "geojson", "parquet", "xlsx", "xls", "pbix", "gexf", "graphml"];
+export const ALL_FORMATS: DataFormat[] = ["csv", "json", "tsv", "geojson", "parquet", "xlsx", "xls", "pbix", "pbit", "gexf", "graphml"];
 
 export const ALL_CHART_TYPES: ChartType[] = [
   "bar", "line", "scatter", "pie", "heatmap", "map", "histogram", "area",

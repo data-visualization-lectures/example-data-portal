@@ -1507,5 +1507,1791 @@
     "source": "https://observablehq.com/@observablehq/sample-datasets",
     "downloadUrls": {},
     "tags": ["retail", "geospatial", "demo"]
+  },
+  {
+    "id": "powerbi-ai-sample",
+    "name": "Artificial Intelligence Sample",
+    "tool": "power-bi",
+    "formats": ["pbix"],
+    "chartTypes": ["bar", "line", "scatter"],
+    "description": "AI搭載ビジュアルと認知インサイトを活用し、データからパターン・予測・自然言語サマリーを抽出するデモレポート。",
+    "longDescription": "Power BIのAI機能（Key Influencers、Decomposition Tree、Smart Narrative等）を体験できるサンプル。機械学習モデルの結果をダッシュボード上で可視化する方法を示します。",
+    "license": "© 2015 Microsoft Corporation / obviEnce",
+    "source": "https://learn.microsoft.com/en-us/power-bi/create-reports/sample-datasets",
+    "downloadUrls": {
+      "pbix": "https://github.com/microsoft/powerbi-desktop-samples/raw/main/Sample%20Reports/Artificial%20Intelligence%20Sample.pbix"
+    },
+    "tags": ["ai", "machine-learning", "microsoft", "demo"]
+  },
+  {
+    "id": "powerbi-covid19-us",
+    "name": "COVID-19 US Tracking Sample",
+    "tool": "power-bi",
+    "formats": ["pbit"],
+    "chartTypes": ["line", "map", "bar"],
+    "description": "米国各地のCOVID-19感染者数・検査数・トレンドを時系列グラフとマップで追跡するテンプレートレポート。",
+    "longDescription": "米国各州・郡のCOVID-19データ（感染者数・死者数・検査数）を地図上で可視化し、時系列トレンドを分析するPower BI テンプレート（.pbit）。データソースを接続して最新情報に更新できます。",
+    "license": "© 2015 Microsoft Corporation / obviEnce",
+    "source": "https://learn.microsoft.com/en-us/power-bi/create-reports/sample-datasets",
+    "downloadUrls": {
+      "pbit": "https://github.com/microsoft/powerbi-desktop-samples/raw/main/powerbi-service-samples/COVID-19%20US%20Tracking%20Sample.pbit"
+    },
+    "tags": ["covid-19", "public-health", "usa", "time-series"]
+  },
+  {
+    "id": "powerbi-customer-profitability",
+    "name": "Customer Profitability Sample",
+    "tool": "power-bi",
+    "formats": ["pbix", "xlsx"],
+    "chartTypes": ["bar", "line", "scatter"],
+    "description": "顧客セグメント別の収益・コスト・利益分析。高収益・低収益顧客の特定とライフタイムバリューを可視化。",
+    "longDescription": "CFO視点で顧客別・地域別・担当者別の収益性を分析するサンプル。KPIカード・散布図・ウォーターフォールチャートを活用し、どの顧客が最も利益に貢献しているかを多角的に示します。",
+    "license": "© 2015 Microsoft Corporation / obviEnce",
+    "source": "https://learn.microsoft.com/en-us/power-bi/create-reports/sample-datasets",
+    "downloadUrls": {
+      "pbix": "https://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer%20Profitability%20Sample%20PBIX.pbix",
+      "xlsx": "https://github.com/microsoft/powerbi-desktop-samples/raw/main/powerbi-service-samples/Customer%20Profitability%20Sample-no-PV.xlsx"
+    },
+    "tags": ["sales", "finance", "crm", "profitability"]
+  },
+  {
+    "id": "powerbi-corporate-spend",
+    "name": "Corporate Spend Sample",
+    "tool": "power-bi",
+    "formats": ["pbix"],
+    "chartTypes": ["bar", "treemap", "pie"],
+    "description": "カテゴリ・部門・ベンダー別の企業支出を可視化し、コスト最適化を支援するダッシュボード。",
+    "longDescription": "企業の調達・経費データを部門別・ベンダー別・カテゴリ別に分析するサンプル。ツリーマップやウォーターフォールチャートを使ってコストドライバーを特定し、予算対比を示します。",
+    "license": "© 2015 Microsoft Corporation / obviEnce",
+    "source": "https://learn.microsoft.com/en-us/power-bi/create-reports/sample-datasets",
+    "downloadUrls": {
+      "pbix": "https://github.com/microsoft/powerbi-desktop-samples/raw/main/new-power-bi-service-samples/Corporate%20Spend.pbix"
+    },
+    "tags": ["finance", "procurement", "spending", "enterprise"]
+  },
+  {
+    "id": "powerbi-it-spend",
+    "name": "IT Spend Analysis Sample",
+    "tool": "power-bi",
+    "formats": ["pbix", "xlsx"],
+    "chartTypes": ["bar", "line", "treemap"],
+    "description": "ITプロジェクト・サービス・コストセンター別の支出内訳。予算策定とチャージバック意思決定を支援。",
+    "longDescription": "IT部門の予算計画と実際支出を比較・分析するサンプル。プロジェクト・インフラ・サービス別に支出を分類し、コストセンター間の偏りや過剰支出を特定するレポートです。",
+    "license": "© 2015 Microsoft Corporation / obviEnce",
+    "source": "https://learn.microsoft.com/en-us/power-bi/create-reports/sample-datasets",
+    "downloadUrls": {
+      "pbix": "https://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT%20Spend%20Analysis%20Sample%20PBIX.pbix",
+      "xlsx": "https://github.com/microsoft/powerbi-desktop-samples/raw/main/powerbi-service-samples/IT%20Spend%20Analysis%20Sample-no-PV.xlsx"
+    },
+    "tags": ["it", "finance", "budget", "enterprise"]
+  },
+  {
+    "id": "powerbi-employee-hiring",
+    "name": "Employee Hiring and History Sample",
+    "tool": "power-bi",
+    "formats": ["pbix"],
+    "chartTypes": ["bar", "line", "scatter"],
+    "description": "採用トレンド・在籍期間・従業員履歴データを可視化し、人材計画・HR分析を支援するダッシュボード。",
+    "longDescription": "HR部門の採用状況・離職率・在籍年数・採用チャネル別実績を時系列で追跡するサンプル。従業員数の推移・部門別人員配置・採用コスト等の指標を含みます。",
+    "license": "© 2015 Microsoft Corporation / obviEnce",
+    "source": "https://learn.microsoft.com/en-us/power-bi/create-reports/sample-datasets",
+    "downloadUrls": {
+      "pbix": "https://github.com/microsoft/powerbi-desktop-samples/raw/main/new-power-bi-service-samples/Employee%20Hiring%20and%20History.pbix"
+    },
+    "tags": ["hr", "hiring", "workforce", "people-analytics"]
+  },
+  {
+    "id": "powerbi-human-resources",
+    "name": "Human Resources Sample",
+    "tool": "power-bi",
+    "formats": ["pbix", "xlsx"],
+    "chartTypes": ["bar", "scatter", "pie"],
+    "description": "従業員数・離職率・多様性・人員分布などHR KPIをまとめたレポートサンプル。",
+    "longDescription": "人事部門の主要指標（ヘッドカウント・離職率・性別/年齢層多様性・給与分布）を一覧できるダッシュボード。分析ペインを活用したクイックインサイト機能のデモとしても利用されます。",
+    "license": "© 2015 Microsoft Corporation / obviEnce",
+    "source": "https://learn.microsoft.com/en-us/power-bi/create-reports/sample-datasets",
+    "downloadUrls": {
+      "pbix": "https://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix",
+      "xlsx": "https://github.com/microsoft/powerbi-desktop-samples/raw/main/powerbi-service-samples/Human%20Resources%20Sample-no-PV.xlsx"
+    },
+    "tags": ["hr", "diversity", "workforce", "kpi"]
+  },
+  {
+    "id": "powerbi-revenue-opportunities",
+    "name": "Revenue Opportunities Sample",
+    "tool": "power-bi",
+    "formats": ["pbix"],
+    "chartTypes": ["bar", "line", "scatter"],
+    "description": "営業パイプラインと収益機会を分析し、案件の優先順位付けと収益予測を支援するダッシュボード。",
+    "longDescription": "営業チームの案件パイプライン・勝率・予測収益を担当者別・製品別・地域別に分析するサンプル。ファネル分析とウォーターフォールを使ってステージ間の転換率を可視化します。",
+    "license": "© 2015 Microsoft Corporation / obviEnce",
+    "source": "https://learn.microsoft.com/en-us/power-bi/create-reports/sample-datasets",
+    "downloadUrls": {
+      "pbix": "https://github.com/microsoft/powerbi-desktop-samples/raw/main/new-power-bi-service-samples/Revenue%20Opportunities.pbix"
+    },
+    "tags": ["sales", "pipeline", "revenue", "crm"]
+  },
+  {
+    "id": "powerbi-opportunity-analysis",
+    "name": "Opportunity Analysis Sample",
+    "tool": "power-bi",
+    "formats": ["pbix", "xlsx"],
+    "chartTypes": ["bar", "scatter", "pie"],
+    "description": "商談パフォーマンス・成約率・営業担当者の有効性を分析し、売上向上を促進するサンプル。",
+    "longDescription": "CRMデータをもとに商談の勝率・失注理由・担当者別実績・競合比較を多角的に分析するダッシュボード。チャネル・地域・製品カテゴリの組み合わせによるパフォーマンス差異を明示します。",
+    "license": "© 2015 Microsoft Corporation / obviEnce",
+    "source": "https://learn.microsoft.com/en-us/power-bi/create-reports/sample-datasets",
+    "downloadUrls": {
+      "pbix": "https://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix",
+      "xlsx": "https://github.com/microsoft/powerbi-desktop-samples/raw/main/powerbi-service-samples/Opportunity%20Tracking%20Sample%20no%20PV.xlsx"
+    },
+    "tags": ["sales", "crm", "win-rate", "pipeline"]
+  },
+  {
+    "id": "powerbi-procurement",
+    "name": "Procurement Analysis Sample",
+    "tool": "power-bi",
+    "formats": ["pbix", "xlsx"],
+    "chartTypes": ["bar", "pie", "scatter"],
+    "description": "購買活動・サプライヤーパフォーマンス・調達コストを分析し、節約機会とリスクを特定するダッシュボード。",
+    "longDescription": "購買部門向けサプライヤー別・カテゴリ別・地域別の調達実績レポート。サプライヤーの納期遵守率・品質スコア・価格交渉余地を可視化し、コスト削減の優先度を決定するために活用します。",
+    "license": "© 2015 Microsoft Corporation / obviEnce",
+    "source": "https://learn.microsoft.com/en-us/power-bi/create-reports/sample-datasets",
+    "downloadUrls": {
+      "pbix": "https://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement%20Analysis%20Sample%20PBIX.pbix",
+      "xlsx": "https://github.com/microsoft/powerbi-desktop-samples/raw/main/powerbi-service-samples/Procurement%20Analysis%20Sample-no-PV.xlsx"
+    },
+    "tags": ["procurement", "supply-chain", "finance", "vendor"]
+  },
+  {
+    "id": "powerbi-regional-sales",
+    "name": "Regional Sales Sample",
+    "tool": "power-bi",
+    "formats": ["pbix"],
+    "chartTypes": ["map", "bar", "line"],
+    "description": "地域・テリトリー別の売上パフォーマンスを地理マップとドリルダウン機能で可視化するサンプル。",
+    "longDescription": "米国各地域・営業テリトリー別の売上実績・目標比・成長率を地図と棒グラフで分析するダッシュボード。地図ビジュアルとドリルダウン機能を活用したナビゲーションのデモとして最適です。",
+    "license": "© 2015 Microsoft Corporation / obviEnce",
+    "source": "https://learn.microsoft.com/en-us/power-bi/create-reports/sample-datasets",
+    "downloadUrls": {
+      "pbix": "https://github.com/microsoft/powerbi-desktop-samples/raw/main/new-power-bi-service-samples/Regional%20Sales%20Sample.pbix"
+    },
+    "tags": ["sales", "geospatial", "regional", "map"]
+  },
+  {
+    "id": "powerbi-store-sales",
+    "name": "Store Sales Sample",
+    "tool": "power-bi",
+    "formats": ["pbix"],
+    "chartTypes": ["bar", "line", "scatter"],
+    "description": "店舗レベルの売上指標・製品パフォーマンス・トレンドを分析し、小売オペレーションを支援するダッシュボード。",
+    "longDescription": "小売業の店舗別・製品別・期間別売上データを多角的に分析するサンプル。前年比・目標達成率・商品カテゴリ別パフォーマンスを一目で把握できます。",
+    "license": "© 2015 Microsoft Corporation / obviEnce",
+    "source": "https://learn.microsoft.com/en-us/power-bi/create-reports/sample-datasets",
+    "downloadUrls": {
+      "pbix": "https://github.com/microsoft/powerbi-desktop-samples/raw/main/new-power-bi-service-samples/Store%20Sales.pbix"
+    },
+    "tags": ["retail", "sales", "store", "performance"]
+  },
+  {
+    "id": "powerbi-retail-analysis",
+    "name": "Retail Analysis Sample",
+    "tool": "power-bi",
+    "formats": ["pbix", "xlsx"],
+    "chartTypes": ["bar", "line", "map", "scatter"],
+    "description": "売上・在庫・販促・顧客行動を網羅した小売業総合ダッシュボード。Power BI入門の定番サンプル。",
+    "longDescription": "小売チェーンの全店舗・全カテゴリにわたる売上・粗利・在庫回転・販促効果・顧客分析を1つのレポートに凝縮。Power BI学習ガイドで最もよく参照されるサンプルの一つです。",
+    "license": "© 2015 Microsoft Corporation / obviEnce",
+    "source": "https://learn.microsoft.com/en-us/power-bi/create-reports/sample-datasets",
+    "downloadUrls": {
+      "pbix": "https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix",
+      "xlsx": "https://github.com/microsoft/powerbi-desktop-samples/raw/main/powerbi-service-samples/Retail%20Analysis%20Sample-no-PV.xlsx"
+    },
+    "tags": ["retail", "sales", "inventory", "comprehensive"]
+  },
+  {
+    "id": "powerbi-competitive-marketing",
+    "name": "Competitive Marketing Analysis Sample",
+    "tool": "power-bi",
+    "formats": ["pbix"],
+    "chartTypes": ["bar", "line", "scatter"],
+    "description": "自社と競合のマーケティングキャンペーン実績を市場ベンチマークと比較し、戦略立案を支援するサンプル。",
+    "longDescription": "マーケティング部門向けの競合分析ダッシュボード。市場シェア・ブランド認知度・キャンペーンROI・チャネル別効果を競合他社と比較し、差別化ポイントを特定します。",
+    "license": "© 2015 Microsoft Corporation / obviEnce",
+    "source": "https://learn.microsoft.com/en-us/power-bi/create-reports/sample-datasets",
+    "downloadUrls": {
+      "pbix": "https://github.com/microsoft/powerbi-desktop-samples/raw/main/new-power-bi-service-samples/Competitive%20Marketing%20Analysis.pbix"
+    },
+    "tags": ["marketing", "competitive-analysis", "campaign", "market-share"]
+  },
+  {
+    "id": "powerbi-sales-marketing",
+    "name": "Sales and Marketing Sample",
+    "tool": "power-bi",
+    "formats": ["pbix", "xlsx"],
+    "chartTypes": ["bar", "line", "scatter", "map"],
+    "description": "売上とマーケティングデータを統合し、キャンペーン効果・パイプライン転換・収益への影響を測定するサンプル。",
+    "longDescription": "営業・マーケティング統合ビューを提供するサンプルダッシュボード。リード獲得からクロージングまでのファネル、地域別販売実績、製品カテゴリ別貢献度を一元管理します。",
+    "license": "© 2015 Microsoft Corporation / obviEnce",
+    "source": "https://learn.microsoft.com/en-us/power-bi/create-reports/sample-datasets",
+    "downloadUrls": {
+      "pbix": "https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix",
+      "xlsx": "https://github.com/microsoft/powerbi-desktop-samples/raw/main/powerbi-service-samples/Sales%20and%20Marketing%20Sample-no-PV.xlsx"
+    },
+    "tags": ["sales", "marketing", "pipeline", "revenue"]
+  },
+  {
+    "id": "powerbi-sales-returns",
+    "name": "Sales and Returns Sample",
+    "tool": "power-bi",
+    "formats": ["pbix"],
+    "chartTypes": ["bar", "line", "scatter"],
+    "description": "ボタン・ドリルスルー・条件付き書式・What-Ifパラメーター・カスタムツールチップなどPower BI高度機能のデモ。",
+    "longDescription": "売上と返品データを題材に、Power BIの高度なインタラクティブ機能（ブックマーク・ボタン・ドリルスルー・条件付き書式・What-Ifパラメーター・カスタムツールチップ）を包括的に紹介するサンプルレポートです。",
+    "license": "© 2015 Microsoft Corporation / obviEnce",
+    "source": "https://learn.microsoft.com/en-us/power-bi/create-reports/sample-datasets",
+    "downloadUrls": {
+      "pbix": "https://github.com/microsoft/powerbi-desktop-samples/raw/main/Sample%20Reports/Sales%20%26%20Returns%20Sample%20v201912.pbix"
+    },
+    "tags": ["sales", "returns", "advanced-features", "demo"]
+  },
+  {
+    "id": "powerbi-supplier-quality",
+    "name": "Supplier Quality Analysis Sample",
+    "tool": "power-bi",
+    "formats": ["pbix", "xlsx"],
+    "chartTypes": ["bar", "scatter", "pie"],
+    "description": "サプライヤーの品質指標・不良品数・コンプライアンス状況を監視し、サプライヤーパフォーマンス改善を支援。",
+    "longDescription": "製造業の品質管理部門向けサンプル。サプライヤー別・材料別・工場別の不良率・返品数・品質コストを分析し、改善優先度を決定するためのダッシュボードです。",
+    "license": "© 2015 Microsoft Corporation / obviEnce",
+    "source": "https://learn.microsoft.com/en-us/power-bi/create-reports/sample-datasets",
+    "downloadUrls": {
+      "pbix": "https://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix",
+      "xlsx": "https://github.com/microsoft/powerbi-desktop-samples/raw/main/powerbi-service-samples/Supplier%20Quality%20Analysis%20Sample-no-PV.xlsx"
+    },
+    "tags": ["quality", "supply-chain", "manufacturing", "vendor"]
+  },
+  {
+    "id": "powerbi-financial",
+    "name": "Financial Excel Workbook Sample",
+    "tool": "power-bi",
+    "formats": ["xlsx"],
+    "chartTypes": ["bar", "line", "pie"],
+    "description": "財務諸表・KPI・サンプルレポートを含むExcelワークブック。財務シナリオのPower BI活用デモ用。",
+    "longDescription": "財務部門向けのExcelベースサンプルデータ。損益計算書・貸借対照表・キャッシュフロー計算書のサンプルデータとKPI指標を収録。Power BIサービスへのExcelパブリッシュ方法の学習にも活用できます。",
+    "license": "© 2015 Microsoft Corporation / obviEnce",
+    "source": "https://learn.microsoft.com/en-us/power-bi/create-reports/sample-datasets",
+    "downloadUrls": {
+      "xlsx": "https://go.microsoft.com/fwlink/?LinkID=521962"
+    },
+    "tags": ["finance", "excel", "financial-statements", "kpi"]
+  },
+  {
+    "id": "r-ability-cov",
+    "name": "ability.cov",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["heatmap"],
+    "description": "6種類の能力テスト（一般・絵画・積み木・迷路・読み取り・語彙）の共分散行列。",
+    "rows": 6,
+    "columns": 6,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/ability.cov.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/ability.cov.csv"
+    },
+    "tags": ["psychology", "covariance", "ability"]
+  },
+  {
+    "id": "r-airmiles",
+    "name": "airmiles",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["line", "area"],
+    "description": "1937〜1960年の米国商業航空旅客マイル数の年次時系列データ。",
+    "rows": 24,
+    "columns": 1,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/airmiles.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/airmiles.csv"
+    },
+    "tags": ["aviation", "time-series", "transport"]
+  },
+  {
+    "id": "r-airquality",
+    "name": "airquality",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["scatter", "line", "histogram"],
+    "description": "1973年5〜9月のニューヨーク市の大気質測定値。オゾン・太陽放射・風速・気温を収録。",
+    "rows": 153,
+    "columns": 6,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/airquality.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/airquality.csv"
+    },
+    "tags": ["environment", "air-quality", "new-york"]
+  },
+  {
+    "id": "r-anscombe",
+    "name": "anscombe",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["scatter", "line"],
+    "description": "Anscombe's Quartet: 統計量（平均・分散・相関）が等しいが視覚的に大きく異なる4組の回帰データ。",
+    "rows": 11,
+    "columns": 8,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/anscombe.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/anscombe.csv"
+    },
+    "tags": ["statistics", "classic", "regression", "visualization"]
+  },
+  {
+    "id": "r-attenu",
+    "name": "attenu",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["scatter"],
+    "description": "Joyner-Boore地震動減衰データ。23回の地震のピーク加速度と震源距離を収録。",
+    "rows": 182,
+    "columns": 5,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/attenu.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/attenu.csv"
+    },
+    "tags": ["geology", "earthquake", "seismology"]
+  },
+  {
+    "id": "r-attitude",
+    "name": "attitude",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["scatter", "heatmap"],
+    "description": "Chatterjee-Price態度調査データ。30の部門における従業員態度スコア7項目。",
+    "rows": 30,
+    "columns": 7,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/attitude.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/attitude.csv"
+    },
+    "tags": ["psychology", "survey", "workplace"]
+  },
+  {
+    "id": "r-austres",
+    "name": "austres",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["line", "area"],
+    "description": "1971〜1994年のオーストラリア居住者数の四半期時系列データ（単位：千人）。",
+    "rows": 89,
+    "columns": 1,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/austres.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/austres.csv"
+    },
+    "tags": ["demography", "australia", "time-series"]
+  },
+  {
+    "id": "r-beaver1",
+    "name": "beaver1",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["line", "scatter"],
+    "description": "ビーバー1匹目の体温時系列データ。冬季の活動・休眠状態と体温変動を10分間隔で記録。",
+    "rows": 114,
+    "columns": 4,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/beavers.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/beaver1.csv"
+    },
+    "tags": ["biology", "animal", "time-series", "temperature"]
+  },
+  {
+    "id": "r-beaver2",
+    "name": "beaver2",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["line", "scatter"],
+    "description": "ビーバー2匹目の体温時系列データ。活動・休眠状態と体温変動を10分間隔で記録。",
+    "rows": 100,
+    "columns": 4,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/beavers.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/beaver2.csv"
+    },
+    "tags": ["biology", "animal", "time-series", "temperature"]
+  },
+  {
+    "id": "r-bjsales",
+    "name": "BJsales",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["line"],
+    "description": "Box-Jenkins売上時系列データ。時系列解析の教科書で頻繁に使われる150時点の売上記録。",
+    "rows": 150,
+    "columns": 1,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/BJsales.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/BJsales.csv"
+    },
+    "tags": ["sales", "time-series", "box-jenkins"]
+  },
+  {
+    "id": "r-bjsales-lead",
+    "name": "BJsales.lead",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["line", "scatter"],
+    "description": "BJsalesの先行指標時系列。売上予測モデルの入力変数として使われる150時点のデータ。",
+    "rows": 150,
+    "columns": 1,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/BJsales.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/BJsales.lead.csv"
+    },
+    "tags": ["sales", "time-series", "leading-indicator"]
+  },
+  {
+    "id": "r-bod",
+    "name": "BOD",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["scatter", "line"],
+    "description": "生物的酸素要求量（BOD）と培養日数の関係。水質評価の標準測定指標を収録。",
+    "rows": 6,
+    "columns": 2,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/BOD.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/BOD.csv"
+    },
+    "tags": ["environment", "water-quality", "biochemistry"]
+  },
+  {
+    "id": "r-cars",
+    "name": "cars (R)",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["scatter"],
+    "description": "1920年代の自動車の速度（mph）と制動距離（フィート）の関係。単純回帰の古典的データ。",
+    "rows": 50,
+    "columns": 2,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/cars.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/cars.csv"
+    },
+    "tags": ["automotive", "regression", "classic"]
+  },
+  {
+    "id": "r-chickweight",
+    "name": "ChickWeight",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["line", "scatter"],
+    "description": "4種類の飼料を与えたひよこの体重成長データ。反復測定実験の代表的データセット。",
+    "rows": 578,
+    "columns": 4,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/ChickWeight.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/ChickWeight.csv"
+    },
+    "tags": ["biology", "growth", "nutrition", "longitudinal"]
+  },
+  {
+    "id": "r-chickwts",
+    "name": "chickwts",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["bar", "histogram"],
+    "description": "6種類の飼料（ひまわり・大豆・カゼイン等）を与えたひよこ71羽の体重比較データ。",
+    "rows": 71,
+    "columns": 2,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/chickwts.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/chickwts.csv"
+    },
+    "tags": ["biology", "nutrition", "anova"]
+  },
+  {
+    "id": "r-co2-grass",
+    "name": "CO2",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["scatter", "line"],
+    "description": "カナダ産とミシシッピ産のエリアンサス草のCO2吸収実験。チリングストレス下での光合成応答。",
+    "rows": 84,
+    "columns": 5,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/CO2.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/CO2.csv"
+    },
+    "tags": ["biology", "ecology", "photosynthesis", "experiment"]
+  },
+  {
+    "id": "r-co2-mauna",
+    "name": "co2",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["line", "area"],
+    "description": "1959〜1997年のハワイ・マウナロア観測所における大気中CO2濃度の月次時系列（ppm）。",
+    "rows": 468,
+    "columns": 1,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/co2.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/co2.csv"
+    },
+    "tags": ["climate", "co2", "time-series", "environment"]
+  },
+  {
+    "id": "r-crimtab",
+    "name": "crimtab",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["heatmap", "bar"],
+    "description": "Student（Gosset）による3000人の男性犯罪者の左中指の長さと身長のクロス集計表。",
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/crimtab.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/crimtab.csv"
+    },
+    "tags": ["criminology", "statistics", "classic", "cross-tabulation"]
+  },
+  {
+    "id": "r-discoveries",
+    "name": "discoveries",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["bar", "line"],
+    "description": "1860〜1959年の重要な科学的発見の年次件数。100年間のイノベーションの波を記録。",
+    "rows": 100,
+    "columns": 1,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/discoveries.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/discoveries.csv"
+    },
+    "tags": ["history", "science", "time-series"]
+  },
+  {
+    "id": "r-dnase",
+    "name": "DNase",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["scatter", "line"],
+    "description": "ELISAアッセイによるDNase酵素の吸光度と濃度の関係。非線形回帰の教材データ。",
+    "rows": 176,
+    "columns": 3,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/DNase.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/DNase.csv"
+    },
+    "tags": ["biochemistry", "enzyme", "assay", "nonlinear"]
+  },
+  {
+    "id": "r-esoph",
+    "name": "esoph",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["bar", "heatmap"],
+    "description": "フランス・イル＝エ＝ヴィレーヌ県における食道がん症例対照研究。飲酒・喫煙との関連を調査。",
+    "rows": 88,
+    "columns": 5,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/esoph.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/esoph.csv"
+    },
+    "tags": ["epidemiology", "cancer", "case-control"]
+  },
+  {
+    "id": "r-euro",
+    "name": "euro",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["bar"],
+    "description": "1999年1月1日時点のユーロ導入11か国通貨のユーロ換算レート。",
+    "rows": 11,
+    "columns": 1,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/euro.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/euro.csv"
+    },
+    "tags": ["finance", "currency", "europe"]
+  },
+  {
+    "id": "r-euro-cross",
+    "name": "euro.cross",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["heatmap"],
+    "description": "ユーロ導入11か国通貨間の全クロスレート行列（11×11）。",
+    "rows": 11,
+    "columns": 11,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/euro.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/euro.cross.csv"
+    },
+    "tags": ["finance", "currency", "europe", "matrix"]
+  },
+  {
+    "id": "r-eurodist",
+    "name": "eurodist",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["heatmap"],
+    "description": "ヨーロッパ21都市間の道路距離行列（km）。多次元尺度法のデモによく使われる。",
+    "rows": 21,
+    "columns": 21,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/eurodist.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/eurodist.csv"
+    },
+    "tags": ["geography", "distance", "europe", "mds"]
+  },
+  {
+    "id": "r-eu-stock-markets",
+    "name": "EuStockMarkets",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["line", "area"],
+    "description": "1991〜1998年の欧州主要4株価指数（DAX・SMI・CAC・FTSE）の日次終値。",
+    "rows": 1860,
+    "columns": 4,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/EuStockMarkets.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/EuStockMarkets.csv"
+    },
+    "tags": ["finance", "stocks", "europe", "time-series"]
+  },
+  {
+    "id": "r-faithful",
+    "name": "faithful",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["scatter", "histogram"],
+    "description": "イエローストーン国立公園のオールドフェイスフル間欠泉の噴出時間と待機時間の272回記録。",
+    "rows": 272,
+    "columns": 2,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/faithful.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/faithful.csv"
+    },
+    "tags": ["geology", "geyser", "bimodal", "classic"]
+  },
+  {
+    "id": "r-fdeaths",
+    "name": "fdeaths",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["line"],
+    "description": "1974〜1979年の英国における女性の肺疾患（気管支炎・肺気腫・喘息）による月次死亡者数。",
+    "rows": 72,
+    "columns": 1,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/UKLungDeaths.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/fdeaths.csv"
+    },
+    "tags": ["health", "mortality", "time-series", "uk"]
+  },
+  {
+    "id": "r-formaldehyde",
+    "name": "Formaldehyde",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["scatter", "line"],
+    "description": "ホルムアルデヒドの検量線データ。炭水化物量と比色光度計の吸光度の関係（6点）。",
+    "rows": 6,
+    "columns": 2,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/Formaldehyde.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/Formaldehyde.csv"
+    },
+    "tags": ["chemistry", "calibration", "regression"]
+  },
+  {
+    "id": "r-freeny",
+    "name": "freeny",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["line", "scatter"],
+    "description": "Freeneyの四半期収益データ（1962〜1971年）。収益・価格指数・市場ポテンシャル・所得水準を収録。",
+    "rows": 39,
+    "columns": 5,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/freeny.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/freeny.csv"
+    },
+    "tags": ["economics", "revenue", "time-series", "regression"]
+  },
+  {
+    "id": "r-gait",
+    "name": "gait",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["scatter", "line"],
+    "description": "20人の被験者の歩行中の股関節角度と膝関節角度を20時点で測定した関数データ。",
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/gait.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/gait.csv"
+    },
+    "tags": ["biomechanics", "gait", "functional-data"]
+  },
+  {
+    "id": "r-hair-eye-color",
+    "name": "HairEyeColor",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["bar", "heatmap"],
+    "description": "統計学科の学生592人の髪の色・目の色・性別のクロス集計表（4×4×2）。",
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/HairEyeColor.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/HairEyeColor.csv"
+    },
+    "tags": ["genetics", "survey", "categorical", "classic"]
+  },
+  {
+    "id": "r-harman23-cor",
+    "name": "Harman23.cor",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["heatmap"],
+    "description": "Harman例2.3: 身体測定8変数の相関行列（305人の女学生）。因子分析の古典的データ。",
+    "rows": 8,
+    "columns": 8,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/Harman23.cor.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/Harman23.cor.csv"
+    },
+    "tags": ["psychology", "factor-analysis", "correlation"]
+  },
+  {
+    "id": "r-harman74-cor",
+    "name": "Harman74.cor",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["heatmap"],
+    "description": "Harman例7.4: 心理検査24変数の相関行列（145人）。大規模因子分析のデモデータ。",
+    "rows": 24,
+    "columns": 24,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/Harman74.cor.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/Harman74.cor.csv"
+    },
+    "tags": ["psychology", "factor-analysis", "correlation"]
+  },
+  {
+    "id": "r-indometh",
+    "name": "Indometh",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["scatter", "line"],
+    "description": "インドメタシン（消炎鎮痛剤）の薬物動態データ。6人の被験者での血漿中濃度の経時変化。",
+    "rows": 66,
+    "columns": 3,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/Indometh.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/Indometh.csv"
+    },
+    "tags": ["pharmacology", "pharmacokinetics", "medicine"]
+  },
+  {
+    "id": "r-infert",
+    "name": "infert",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["bar", "heatmap"],
+    "description": "自然流産・人工中絶後の不妊に関する症例対照研究データ。248人の女性を対象。",
+    "rows": 248,
+    "columns": 8,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/infert.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/infert.csv"
+    },
+    "tags": ["epidemiology", "reproductive-health", "case-control"]
+  },
+  {
+    "id": "r-insect-sprays",
+    "name": "InsectSprays",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["bar", "histogram"],
+    "description": "6種類の殺虫剤の効果を比較した実験データ。各処理区画の昆虫数を記録。",
+    "rows": 72,
+    "columns": 2,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/InsectSprays.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/InsectSprays.csv"
+    },
+    "tags": ["agriculture", "experiment", "anova"]
+  },
+  {
+    "id": "r-iris3",
+    "name": "iris3",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["scatter", "histogram"],
+    "description": "Edgar AndersonのIrisデータの3次元配列版（50×4×3）。species別の花弁・萼片測定値。",
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/iris.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/iris3.csv"
+    },
+    "tags": ["botany", "classification", "classic", "multivariate"]
+  },
+  {
+    "id": "r-islands",
+    "name": "islands",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["bar", "histogram"],
+    "description": "世界の主要な陸塊（大陸・島）48か所の面積（千平方マイル）。",
+    "rows": 48,
+    "columns": 1,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/islands.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/islands.csv"
+    },
+    "tags": ["geography", "land", "area"]
+  },
+  {
+    "id": "r-johnson-johnson",
+    "name": "JohnsonJohnson",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["line", "bar"],
+    "description": "1960〜1980年のジョンソン・エンド・ジョンソン社の四半期1株当たり利益（ドル）。",
+    "rows": 84,
+    "columns": 1,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/JohnsonJohnson.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/JohnsonJohnson.csv"
+    },
+    "tags": ["finance", "earnings", "time-series", "seasonal"]
+  },
+  {
+    "id": "r-lake-huron",
+    "name": "LakeHuron",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["line", "area"],
+    "description": "1875〜1972年のヒューロン湖の年次水位データ（フィート）。",
+    "rows": 98,
+    "columns": 1,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/LakeHuron.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/LakeHuron.csv"
+    },
+    "tags": ["environment", "hydrology", "time-series"]
+  },
+  {
+    "id": "r-ldeaths",
+    "name": "ldeaths",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["line"],
+    "description": "1974〜1979年の英国における肺疾患による月次死亡者数の合計（男女計）。",
+    "rows": 72,
+    "columns": 1,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/UKLungDeaths.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/ldeaths.csv"
+    },
+    "tags": ["health", "mortality", "time-series", "uk"]
+  },
+  {
+    "id": "r-lh",
+    "name": "lh",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["line"],
+    "description": "ある女性の血中黄体形成ホルモン（LH）濃度を10分間隔で48時点測定した時系列データ。",
+    "rows": 48,
+    "columns": 1,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/lh.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/lh.csv"
+    },
+    "tags": ["biology", "hormones", "time-series", "medicine"]
+  },
+  {
+    "id": "r-lifecycle-savings",
+    "name": "LifeCycleSavings",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["scatter"],
+    "description": "Modigliani・Andoのライフサイクル貯蓄仮説の検証データ。50か国の平均貯蓄率と人口構成。",
+    "rows": 50,
+    "columns": 5,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/LifeCycleSavings.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/LifeCycleSavings.csv"
+    },
+    "tags": ["economics", "savings", "cross-country"]
+  },
+  {
+    "id": "r-loblolly",
+    "name": "Loblolly",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["line", "scatter"],
+    "description": "ロブロリーマツ（Pinus taeda）の樹齢・樹高成長データ。14本の木を複数時点で測定。",
+    "rows": 84,
+    "columns": 3,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/Loblolly.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/Loblolly.csv"
+    },
+    "tags": ["forestry", "growth", "longitudinal"]
+  },
+  {
+    "id": "r-longley",
+    "name": "longley",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["scatter", "line"],
+    "description": "Longleyの経済回帰データ（1947〜1962年）。多重共線性の診断に使われる古典的データ。",
+    "rows": 16,
+    "columns": 7,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/longley.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/longley.csv"
+    },
+    "tags": ["economics", "regression", "multicollinearity", "classic"]
+  },
+  {
+    "id": "r-lynx",
+    "name": "lynx",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["line", "bar"],
+    "description": "1821〜1934年のカナダにおけるオオヤマネコの年次捕獲数。周期的個体数変動の古典データ。",
+    "rows": 114,
+    "columns": 1,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/lynx.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/lynx.csv"
+    },
+    "tags": ["ecology", "wildlife", "time-series", "cycles"]
+  },
+  {
+    "id": "r-mdeaths",
+    "name": "mdeaths",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["line"],
+    "description": "1974〜1979年の英国における男性の肺疾患による月次死亡者数。",
+    "rows": 72,
+    "columns": 1,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/UKLungDeaths.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/mdeaths.csv"
+    },
+    "tags": ["health", "mortality", "time-series", "uk"]
+  },
+  {
+    "id": "r-morley",
+    "name": "morley",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["scatter", "histogram"],
+    "description": "Michelsonによる光速測定の古典的実験データ（1879年）。5回の実験×各20回の測定値。",
+    "rows": 100,
+    "columns": 3,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/morley.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/morley.csv"
+    },
+    "tags": ["physics", "measurement", "classic", "experiment"]
+  },
+  {
+    "id": "r-nhtemp",
+    "name": "nhtemp",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["line"],
+    "description": "1912〜1971年のコネチカット州ニューヘイブンの年平均気温（華氏）の時系列データ。",
+    "rows": 60,
+    "columns": 1,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/nhtemp.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/nhtemp.csv"
+    },
+    "tags": ["climate", "temperature", "time-series", "usa"]
+  },
+  {
+    "id": "r-nile",
+    "name": "Nile",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["line", "histogram"],
+    "description": "1871〜1970年のナイル川アスワン地点の年間流量（10億立方メートル）。構造変化検出の古典データ。",
+    "rows": 100,
+    "columns": 1,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/Nile.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/Nile.csv"
+    },
+    "tags": ["hydrology", "nile", "time-series", "structural-break"]
+  },
+  {
+    "id": "r-nottem",
+    "name": "nottem",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["line"],
+    "description": "1920〜1939年のノッティンガム城における月次平均気温（華氏）の時系列データ。",
+    "rows": 240,
+    "columns": 1,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/nottem.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/nottem.csv"
+    },
+    "tags": ["climate", "temperature", "time-series", "uk"]
+  },
+  {
+    "id": "r-npk",
+    "name": "npk",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["bar"],
+    "description": "窒素（N）・リン（P）・カリウム（K）の古典的3要素交互作用実験。エンドウ豆の収量を記録。",
+    "rows": 24,
+    "columns": 5,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/npk.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/npk.csv"
+    },
+    "tags": ["agriculture", "factorial-experiment", "fertilizer"]
+  },
+  {
+    "id": "r-occupational-status",
+    "name": "occupationalStatus",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["heatmap", "bar"],
+    "description": "英国の父親と息子の職業的地位の移動を示す8×8のクロス集計表。社会的流動性の分析に使用。",
+    "rows": 8,
+    "columns": 8,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/occupationalStatus.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/occupationalStatus.csv"
+    },
+    "tags": ["sociology", "mobility", "cross-tabulation"]
+  },
+  {
+    "id": "r-orange",
+    "name": "Orange",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["line", "scatter"],
+    "description": "5本のオレンジの木の樹齢（日）と幹の周囲長（mm）の成長追跡データ。",
+    "rows": 35,
+    "columns": 3,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/Orange.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/Orange.csv"
+    },
+    "tags": ["biology", "growth", "longitudinal", "nonlinear"]
+  },
+  {
+    "id": "r-orchard-sprays",
+    "name": "OrchardSprays",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["bar", "scatter"],
+    "description": "果樹園農薬の忌避効果を評価したラテン方格法実験。スクロース溶液の糖度と密蜂の活動量。",
+    "rows": 64,
+    "columns": 4,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/OrchardSprays.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/OrchardSprays.csv"
+    },
+    "tags": ["agriculture", "experiment", "latin-square"]
+  },
+  {
+    "id": "r-penguins",
+    "name": "penguins",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["scatter", "histogram"],
+    "description": "南極パーマー基地付近で採取したアデリー・ジェンツー・ヒゲペンギン344羽の体測定データ。",
+    "rows": 344,
+    "columns": 8,
+    "license": "CC0 1.0",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/penguins.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/palmerpenguins/penguins.csv"
+    },
+    "tags": ["biology", "ornithology", "classification", "antarctica"]
+  },
+  {
+    "id": "r-penguins-raw",
+    "name": "penguins_raw",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["scatter", "histogram"],
+    "description": "Palmer Penguinsデータの生データ版。個体識別情報・測定者・同位体データ等を含む詳細版（17列）。",
+    "rows": 344,
+    "columns": 17,
+    "license": "CC0 1.0",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/penguins.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/palmerpenguins/penguins_raw.csv"
+    },
+    "tags": ["biology", "ornithology", "raw-data", "antarctica"]
+  },
+  {
+    "id": "r-plant-growth",
+    "name": "PlantGrowth",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["bar"],
+    "description": "乾燥重量による植物の成長実験。対照群と2処理群（trt1・trt2）の比較データ。",
+    "rows": 30,
+    "columns": 2,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/PlantGrowth.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/PlantGrowth.csv"
+    },
+    "tags": ["biology", "experiment", "anova"]
+  },
+  {
+    "id": "r-precip",
+    "name": "precip",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["bar", "map"],
+    "description": "米国70都市の年間平均降水量（インチ）。地域別気候の比較に使用。",
+    "rows": 70,
+    "columns": 1,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/precip.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/precip.csv"
+    },
+    "tags": ["climate", "precipitation", "usa", "geography"]
+  },
+  {
+    "id": "r-presidents",
+    "name": "presidents",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["line"],
+    "description": "1945〜1974年の米国大統領の四半期支持率（%）。欠損値あり。時系列解析の教材データ。",
+    "rows": 120,
+    "columns": 1,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/presidents.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/presidents.csv"
+    },
+    "tags": ["politics", "approval-rating", "usa", "time-series"]
+  },
+  {
+    "id": "r-pressure",
+    "name": "pressure",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["scatter", "line"],
+    "description": "水銀の蒸気圧と温度の関係（0〜360℃）。非線形回帰・変換の教材データ。",
+    "rows": 19,
+    "columns": 2,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/pressure.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/pressure.csv"
+    },
+    "tags": ["chemistry", "physics", "nonlinear", "regression"]
+  },
+  {
+    "id": "r-puromycin",
+    "name": "Puromycin",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["scatter", "line"],
+    "description": "ピューロマイシン処理の有無による酵素反応速度（Michaelis-Menten式）の比較実験データ。",
+    "rows": 23,
+    "columns": 3,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/Puromycin.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/Puromycin.csv"
+    },
+    "tags": ["biochemistry", "enzyme", "nonlinear", "michaelis-menten"]
+  },
+  {
+    "id": "r-quakes",
+    "name": "quakes",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["scatter", "map", "histogram"],
+    "description": "フィジー周辺での地震1000件の震源位置・深さ・マグニチュード・観測点数データ。",
+    "rows": 1000,
+    "columns": 5,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/quakes.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/quakes.csv"
+    },
+    "tags": ["geology", "earthquake", "geospatial", "fiji"]
+  },
+  {
+    "id": "r-randu",
+    "name": "randu",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["scatter"],
+    "description": "IBM RANDU線形合同乱数生成器による400個の擬似乱数（3次元）。乱数の質の問題を示す有名な例。",
+    "rows": 400,
+    "columns": 3,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/randu.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/randu.csv"
+    },
+    "tags": ["statistics", "random-numbers", "classic", "cautionary"]
+  },
+  {
+    "id": "r-rivers",
+    "name": "rivers",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["histogram", "bar"],
+    "description": "北米141本の主要河川の長さ（マイル）。分布分析・ヒストグラムの基本例として使用される。",
+    "rows": 141,
+    "columns": 1,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/rivers.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/rivers.csv"
+    },
+    "tags": ["geography", "hydrology", "distribution"]
+  },
+  {
+    "id": "r-rock",
+    "name": "rock",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["scatter"],
+    "description": "石油貯留岩のサンプル48個の面積・周長・形状・透水率データ。多変量回帰の教材。",
+    "rows": 48,
+    "columns": 4,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/rock.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/rock.csv"
+    },
+    "tags": ["geology", "petroleum", "regression"]
+  },
+  {
+    "id": "r-seatbelts",
+    "name": "Seatbelts",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["line", "bar"],
+    "description": "1969〜1984年の英国道路交通事故死傷者数の月次時系列。1983年のシートベルト義務化の効果を示す。",
+    "rows": 192,
+    "columns": 8,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/UKDriverDeaths.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/Seatbelts.csv"
+    },
+    "tags": ["traffic", "safety", "policy", "time-series", "uk"]
+  },
+  {
+    "id": "r-sleep",
+    "name": "sleep",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["bar", "scatter"],
+    "description": "Gossett（Student）の睡眠データ。2種の睡眠薬が余分睡眠時間に与える効果（20人対象）。",
+    "rows": 20,
+    "columns": 3,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/sleep.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/sleep.csv"
+    },
+    "tags": ["medicine", "paired-test", "classic", "student"]
+  },
+  {
+    "id": "r-stack-loss",
+    "name": "stack.loss",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["scatter", "line"],
+    "description": "Brownleyの硝酸製造プラントデータ（スタックロス列のみ）。ロバスト回帰の古典的外れ値検出例。",
+    "rows": 21,
+    "columns": 1,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/stackloss.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/stackloss.csv"
+    },
+    "tags": ["chemistry", "industrial", "robust-regression"]
+  },
+  {
+    "id": "r-stackloss",
+    "name": "stackloss",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["scatter"],
+    "description": "Brownleyの硝酸製造プラントデータ。エアフロー・水温・酸濃度とスタックロスの関係（21観測）。",
+    "rows": 21,
+    "columns": 4,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/stackloss.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/stackloss.csv"
+    },
+    "tags": ["chemistry", "industrial", "regression", "outliers"]
+  },
+  {
+    "id": "r-state-x77",
+    "name": "state.x77",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["scatter", "bar", "map"],
+    "description": "米国50州の統計データ（人口・収入・文盲率・平均寿命・殺人率・高校進学率・寒冷日数・面積）。",
+    "rows": 50,
+    "columns": 8,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/state.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/state.x77.csv"
+    },
+    "tags": ["geography", "usa", "demographics", "multivariate"]
+  },
+  {
+    "id": "r-sunspot-month",
+    "name": "sunspot.month",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["line", "area"],
+    "description": "1749年〜現在の月次黒点数データ。太陽活動の約11年周期をはっきり示す時系列。",
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/sunspot.month.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/sunspot.month.csv"
+    },
+    "tags": ["astronomy", "solar", "time-series", "cycles"]
+  },
+  {
+    "id": "r-sunspot-year",
+    "name": "sunspot.year",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["line", "bar"],
+    "description": "1700〜1988年の年次黒点数。太陽活動の長期変動と約11年周期を示す古典的時系列データ。",
+    "rows": 289,
+    "columns": 1,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/sunspot.year.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/sunspot.year.csv"
+    },
+    "tags": ["astronomy", "solar", "time-series", "cycles"]
+  },
+  {
+    "id": "r-sunspots",
+    "name": "sunspots",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["line", "area"],
+    "description": "1749〜1983年の月次黒点数（Zürich数）。古典的な時系列解析のベンチマークデータ。",
+    "rows": 2820,
+    "columns": 1,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/sunspots.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/sunspots.csv"
+    },
+    "tags": ["astronomy", "solar", "time-series", "classic"]
+  },
+  {
+    "id": "r-swiss",
+    "name": "swiss",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["scatter", "heatmap"],
+    "description": "1888年スイス47地区の出生率・農業従事率・教育・宗教・乳児死亡率の社会経済統計。",
+    "rows": 47,
+    "columns": 6,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/swiss.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/swiss.csv"
+    },
+    "tags": ["demography", "sociology", "historical", "switzerland"]
+  },
+  {
+    "id": "r-theoph",
+    "name": "Theoph",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["scatter", "line"],
+    "description": "喘息治療薬テオフィリンの薬物動態データ。12人の被験者の血漿中濃度の経時変化。",
+    "rows": 132,
+    "columns": 5,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/Theoph.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/Theoph.csv"
+    },
+    "tags": ["pharmacology", "pharmacokinetics", "medicine", "longitudinal"]
+  },
+  {
+    "id": "r-tooth-growth",
+    "name": "ToothGrowth",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["bar", "scatter"],
+    "description": "ビタミンCの投与量・投与方法（オレンジジュース/アスコルビン酸）がモルモットの歯の成長に与える効果。",
+    "rows": 60,
+    "columns": 3,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/ToothGrowth.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/ToothGrowth.csv"
+    },
+    "tags": ["biology", "experiment", "anova", "dose-response"]
+  },
+  {
+    "id": "r-treering",
+    "name": "treering",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["line"],
+    "description": "紀元前6000年〜1979年の年次樹木年輪幅データ（標準化値）。古気候学の長期時系列。",
+    "rows": 7981,
+    "columns": 1,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/treering.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/treering.csv"
+    },
+    "tags": ["dendrochronology", "paleoclimate", "time-series"]
+  },
+  {
+    "id": "r-trees",
+    "name": "trees",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["scatter"],
+    "description": "ブラックチェリーの木31本の胸高直径・樹高・材積データ。材積推定モデルの古典的データ。",
+    "rows": 31,
+    "columns": 3,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/trees.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/trees.csv"
+    },
+    "tags": ["forestry", "regression", "volume-estimation"]
+  },
+  {
+    "id": "r-ucb-admissions",
+    "name": "UCBAdmissions",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["bar", "heatmap"],
+    "description": "1973年UCバークレー大学院の6学部別・男女別・合否の集計データ。Simpsonのパラドックスの有名な例。",
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/UCBAdmissions.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/UCBAdmissions.csv"
+    },
+    "tags": ["education", "bias", "simpsons-paradox", "classic"]
+  },
+  {
+    "id": "r-uk-driver-deaths",
+    "name": "UKDriverDeaths",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["line"],
+    "description": "1969〜1984年の英国における運転者の月次死亡・重傷者数。シートベルト義務化の影響を含む。",
+    "rows": 192,
+    "columns": 1,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/UKDriverDeaths.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/UKDriverDeaths.csv"
+    },
+    "tags": ["traffic", "safety", "time-series", "uk"]
+  },
+  {
+    "id": "r-ukgas",
+    "name": "UKgas",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["line", "bar"],
+    "description": "1960〜1986年の英国四半期ガス消費量（百万サーム）の時系列。季節性が顕著なデータ。",
+    "rows": 108,
+    "columns": 1,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/UKgas.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/UKgas.csv"
+    },
+    "tags": ["energy", "gas", "seasonal", "time-series", "uk"]
+  },
+  {
+    "id": "r-uk-lung-deaths",
+    "name": "UKLungDeaths",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["line"],
+    "description": "1974〜1979年の英国における肺疾患（気管支炎・肺気腫・喘息）による月次死亡者数（男女計）。",
+    "rows": 72,
+    "columns": 1,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/UKLungDeaths.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/UKLungDeaths.csv"
+    },
+    "tags": ["health", "mortality", "seasonal", "time-series", "uk"]
+  },
+  {
+    "id": "r-us-acc-deaths",
+    "name": "USAccDeaths",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["line", "bar"],
+    "description": "1973〜1978年の米国における月次不慮の事故死亡者数。季節変動が顕著な時系列データ。",
+    "rows": 72,
+    "columns": 1,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/USAccDeaths.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/USAccDeaths.csv"
+    },
+    "tags": ["public-health", "accidents", "seasonal", "time-series", "usa"]
+  },
+  {
+    "id": "r-us-arrests",
+    "name": "USArrests",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["bar", "map", "scatter"],
+    "description": "1973年米国50州の暴力犯罪率（殺人・暴行・強姦）と都市部人口比率データ。クラスタリング教材の定番。",
+    "rows": 50,
+    "columns": 4,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/USArrests.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/USArrests.csv"
+    },
+    "tags": ["crime", "usa", "clustering", "pca"]
+  },
+  {
+    "id": "r-us-cities-d",
+    "name": "UScitiesD",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["heatmap"],
+    "description": "米国10都市間の道路距離行列（マイル）。多次元尺度法（MDS）のデモによく使われる。",
+    "rows": 10,
+    "columns": 10,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/eurodist.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/UScitiesD.csv"
+    },
+    "tags": ["geography", "distance", "usa", "mds"]
+  },
+  {
+    "id": "r-us-judge-ratings",
+    "name": "USJudgeRatings",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["heatmap", "bar"],
+    "description": "コネチカット州上位裁判所の判事43人に対する弁護士によるパフォーマンス評価（12項目）。",
+    "rows": 43,
+    "columns": 12,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/USJudgeRatings.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/USJudgeRatings.csv"
+    },
+    "tags": ["law", "survey", "performance", "multivariate"]
+  },
+  {
+    "id": "r-us-personal-expenditure",
+    "name": "USPersonalExpenditure",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["bar", "line"],
+    "description": "1940〜1960年の米国個人消費支出の5カテゴリ別・5時点の集計データ（十億ドル）。",
+    "rows": 5,
+    "columns": 5,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/USPersonalExpenditure.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/USPersonalExpenditure.csv"
+    },
+    "tags": ["economics", "consumption", "usa", "historical"]
+  },
+  {
+    "id": "r-uspop",
+    "name": "uspop",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["line", "bar"],
+    "description": "1790〜1970年の米国国勢調査人口（百万人）の10年ごとの時系列データ。",
+    "rows": 19,
+    "columns": 1,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/uspop.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/uspop.csv"
+    },
+    "tags": ["demography", "population", "usa", "historical"]
+  },
+  {
+    "id": "r-va-deaths",
+    "name": "VADeaths",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["bar", "heatmap"],
+    "description": "1940年バージニア州の年齢層・男女・都市農村別の死亡率（1000人当たり）。",
+    "rows": 5,
+    "columns": 4,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/VADeaths.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/VADeaths.csv"
+    },
+    "tags": ["demography", "mortality", "historical", "usa"]
+  },
+  {
+    "id": "r-volcano",
+    "name": "volcano",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["heatmap", "map"],
+    "description": "ニュージーランド・オークランドのマウンガ・ワウ火山の地形データ（87×61行列、高さm）。等高線図の定番。",
+    "rows": 87,
+    "columns": 61,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/volcano.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/volcano.csv"
+    },
+    "tags": ["geology", "topography", "matrix", "new-zealand"]
+  },
+  {
+    "id": "r-warpbreaks",
+    "name": "warpbreaks",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["bar", "scatter"],
+    "description": "織物製造での経糸切断数。羊毛種（A/B）・張力（低/中/高）の2要因実験データ（54観測）。",
+    "rows": 54,
+    "columns": 3,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/warpbreaks.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/warpbreaks.csv"
+    },
+    "tags": ["manufacturing", "experiment", "anova", "weaving"]
+  },
+  {
+    "id": "r-women",
+    "name": "women",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["scatter", "line"],
+    "description": "米国女性15人の平均身長（インチ）と体重（ポンド）の理論的対応表。線形回帰の入門データ。",
+    "rows": 15,
+    "columns": 2,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/women.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/women.csv"
+    },
+    "tags": ["anthropometry", "regression", "classic"]
+  },
+  {
+    "id": "r-world-phones",
+    "name": "WorldPhones",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["bar", "line"],
+    "description": "1951〜1961年の世界7地域の電話回線数（千本）。地域別通信インフラ発展を示す。",
+    "rows": 7,
+    "columns": 8,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/WorldPhones.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/WorldPhones.csv"
+    },
+    "tags": ["telecommunications", "historical", "global"]
+  },
+  {
+    "id": "r-www-usage",
+    "name": "WWWusage",
+    "tool": "r-datasets",
+    "formats": ["csv"],
+    "chartTypes": ["line", "bar"],
+    "description": "1分ごとのインターネット接続数の時系列データ（100時点）。自己回帰モデルの教材として使用。",
+    "rows": 100,
+    "columns": 1,
+    "license": "R Base Datasets",
+    "source": "https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/WWWusage.html",
+    "downloadUrls": {
+      "csv": "https://vincentarelbundock.github.io/Rdatasets/csv/datasets/WWWusage.csv"
+    },
+    "tags": ["internet", "time-series", "arima"]
   }
 ]
